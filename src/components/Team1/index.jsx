@@ -22,6 +22,7 @@ class Team1 extends React.Component {
     );
   };
   render() {
+    const { title, subtitle, text } = this.props;
     return (
       <section className="team section-padding">
         <div className="container">
@@ -29,18 +30,16 @@ class Team1 extends React.Component {
             <div className="col-lg-5">
               <div className="tit">
                 <h6
-                  className="mb-10 wow fadeInDown"
+                  className="sub-title main-color mb-10 ls10 wow fadeInDown"
                   data-wow-delay=".3s"
                 >
-                  Some thoughts from Us
+                  {subtitle || "Some thoughts from Us"}
                 </h6>
-                <h3 className="playfont wow flipInX" data-wow-delay=".5s">
-                  Our Employees
-                </h3>
-                <p className="wow fadeInUp" data-wow-delay=".3s">
-                  We feel proud for our expert team members beatae ipsum dolor
-                  sit amet, consectetur adipisicing elit mauris vitae consequat
-                  nibh, vitae interdum mi.
+                <h2 className="mb-40 playfont wow flipInX" data-wow-delay=".5s">
+                  {title || "Our Employees"}
+                </h2>
+                <p className="wow fadeInUp" data-wow-delay=".3s" style={{ fontSize: '16px', lineHeight: '1.8' }}>
+                  {text || "We feel proud for our expert team members beatae ipsum dolor sit amet, consectetur adipisicing elit mauris vitae consequat nibh, vitae interdum mi."}
                 </p>
                 {this.renderArrows()}
               </div>

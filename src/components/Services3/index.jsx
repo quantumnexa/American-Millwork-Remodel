@@ -12,8 +12,8 @@ const Services3 = ({ bigTitle, grid }) => {
           <div className="section-head text-center">
             <div className="row justify-content-center">
               <div className="col-lg-8 col-md-10">
-                <h6 className="custom-font wow fadeInDown" data-wow-delay=".3s">
-                  Our Services
+                <h6 className="sub-title main-color mb-10 ls10 wow fadeInDown" data-wow-delay=".3s" style={{ color: '#B68C4A', letterSpacing: '4px', textTransform: 'uppercase', fontWeight: '500' }}>
+                  OUR SERVICES
                 </h6>
                 <h2 className="mb-20 playfont wow flipInX" data-wow-delay=".5s">
                     Complete <span className="text-highlight">Millwork</span> & Finish Solutions for <span className="text-highlight">Commercial</span> and <span className="text-highlight">Residential</span> Projects

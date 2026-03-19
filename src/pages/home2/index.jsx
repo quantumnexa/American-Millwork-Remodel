@@ -15,6 +15,8 @@ import Services5Light from "../../components/Services5-Light";
 import AboutUs8 from "../../components/About-Us8";
 import Skills2 from "../../components/Skills2";
 import Contact from "../../components/Contact";
+import NextProject from "../../components/Next-Project";
+
 
 const Home1 = () => {
   React.useEffect(() => {
@@ -42,9 +44,15 @@ const Home1 = () => {
       <div className="bg-gray">
         <Process />
       </div>
-      <div className="bg-white">
+      {/* <div className="bg-white">
         <Contact />
-      </div>
+      </div> */}
+      <NextProject 
+        title="START YOUR PROJECT TODAY"
+        text="Whether you need a restaurant millwork package, a lobby feature wall, or a kitchen and bath material quote, send your project and our team will guide you to the next step."
+        btn1Text="Submit Project"
+        btn2Text="Get Online Quote"
+      />
     </LightLayout>
   );
 };

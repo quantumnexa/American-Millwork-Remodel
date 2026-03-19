@@ -13,7 +13,7 @@ const AboutUs2 = () => {
               className="exp-content nopat wow fadeInUp"
               data-wow-delay=".3s"
             >
-              <h6 className="sub-title">WHAT WE DO</h6>
+              <h6 className="sub-title main-color mb-10 ls10" style={{ color: '#B68C4A', letterSpacing: '4px', textTransform: 'uppercase', fontWeight: '500' }}>WHAT WE DO</h6>
               <h2 className="mb-20 playfont">
                 One Platform For <span className="text-highlight">Millwork</span>, <span className="text-highlight">Remodeling</span> And <span className="text-highlight">Finishes</span>
               </h2>

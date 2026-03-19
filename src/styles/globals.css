@@ -386,6 +386,27 @@ body.hideX .pace {
   width: 200px !important;
 }
 
+/* Intro-with-horizontal Heading Size */
+.slider .caption h1, .cta__slider-item .caption h1 {
+  font-size: 55px !important;
+}
+
+@media screen and (max-width: 991px) {
+  .slider .caption h1, .cta__slider-item .caption h1 {
+    font-size: 35px !important;
+    white-space: normal !important;
+  }
+}
+
+.next-project .content h2,
+.call-action.next .content h2 {
+  font-weight: 500 !important;
+  font-family: 'Poppins', sans-serif !important;
+  -webkit-text-stroke: 0px transparent !important;
+  -webkit-text-fill-color: #fff !important;
+  color: #fff !important;
+}
+
 @media screen and (max-width: 991px) {
   .navbar .logo {
     width: 150px !important;
@@ -521,6 +542,28 @@ body.hideX .pace {
 
 .about-us-8 .main-color {
   color: #B68C4A !important;
+}
+
+/* AboutUs5 Light Theme Fixes for About Page */
+.about2.bg-light-section {
+  background: #f8f4f3 !important;
+}
+
+.about2.bg-light-section .main-tit h2 {
+  color: #111 !important;
+}
+
+.about2.bg-light-section .content .txt {
+  color: #555 !important;
+}
+
+.about2.bg-light-section .content .exp h3 {
+  -webkit-text-fill-color: #B68C4A !important;
+  background: none !important;
+}
+
+.about2.bg-light-section .content .exp h5 {
+  color: #111 !important;
 }
 
 /* Footer Full-Width & No Padding */

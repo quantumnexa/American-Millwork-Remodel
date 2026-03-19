@@ -98,7 +98,7 @@
 				left: 0;
 				right: 0;
 				bottom: 0;
-				background: #212121;
+				background: #4A3428;
 				transition: all .4s;
 				z-index: -1;
 			}
@@ -107,18 +107,18 @@
 }
 
 .services-col{
-	background: #212121;
+	background: #4A3428;
 
 	.item-bx{
 		padding: 60px 40px;
 		height: 100%;
 		background-color: #272727;
-		border: 1px solid #212121;
+		border: 1px solid #4A3428;
 		border-right: 0;
 		transition: all .4s;
 
 		&:last-of-type{
-			border-right: 1px solid #212121;
+			border-right: 1px solid #4A3428;
 		}
 
 		&:hover{

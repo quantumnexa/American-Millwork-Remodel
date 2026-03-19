@@ -10,7 +10,7 @@ const Skills2 = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="content pr-60">
-                <h6 className="sub-title main-color mb-10 ls10">OUR EXPERTISE</h6>
+                <h6 className="sub-title main-color mb-10 ls10" style={{ color: '#B68C4A', letterSpacing: '4px', textTransform: 'uppercase', fontWeight: '500' }}>OUR EXPERTISE</h6>
                 <h2 className="playfont mb-20">
                   Crafting Excellence in <span className="text-highlight">Millwork</span> and <span className="text-highlight">Remodeling</span>.
                 </h2>

@@ -17,7 +17,7 @@ import AboutUs5 from "../../components/About-Us5";
 import Services6 from "../../components/Services6";
 import NextProject from "../../components/Next-Project";
 
-const About = () => {
+const Services = () => {
   React.useEffect(() => {
     document.querySelector("body").classList.add("homepage");
   }, []);
@@ -28,10 +28,10 @@ const About = () => {
           id: 1,
           title: {
             first: "ABOUT",
-            second: "American Millwork & Remodel"
+            second: "OUR SERVICES"
           },
           content: {
-            first: "American Millwork & Remodel was created to solve two common problems in the market: clients struggle to find reliable custom finish solutions for commercial interiors, and many homeowners want fast pricing for kitchens and bathrooms without waiting through a slow traditional process."
+            first: "We provide custom millwork, finish carpentry, kitchen and bathroom remodeling materials, flooring, and shop drawing support for commercial and residential projects."
           },
           image: "/assets/img/slid/3.jpg"
         }]}
@@ -161,4 +161,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Services;

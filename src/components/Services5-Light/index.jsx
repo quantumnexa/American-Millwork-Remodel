@@ -75,17 +75,17 @@ const Services5Light = ({
         <div className="section-head text-center">
           <div className="row justify-content-center">
             <div className="col-lg-8 col-md-10">
-              <h6 className="custom-font wow fadeInDown" data-wow-delay=".3s">
+              <h6 className="sub-title main-color mb-10 ls10 wow fadeInDown" data-wow-delay=".3s" style={{ color: '#B68C4A' }}>
                 {currentData.subtitle}
               </h6>
-              <h2 className="mb-20 playfont wow flipInX" data-wow-delay=".5s">
+              <h2 className="mb-20 playfont wow flipInX" data-wow-delay=".5s" style={{ fontSize: '40px' }}>
                 {currentData.title}
               </h2>
-              <p className="wow fadeInUp" data-wow-delay=".7s">
+              <p className="wow fadeInUp" data-wow-delay=".7s" style={{ fontSize: '16px', lineHeight: '1.8' }}>
                 {currentData.text}
               </p>
               {currentData.keyMessage && (
-                <p className="mt-20 highlight-text wow fadeInUp" data-wow-delay=".8s" style={{color: '#B68C4A', fontWeight: '500'}}>
+                <p className="mt-20 highlight-text wow fadeInUp" data-wow-delay=".8s" style={{color: '#B68C4A', fontWeight: '500', fontSize: '16px'}}>
                   {currentData.keyMessage}
                 </p>
               )}

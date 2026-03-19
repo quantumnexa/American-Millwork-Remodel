@@ -10,8 +10,8 @@ const Process = () => {
         <div className="section-head text-center">
           <div className="row justify-content-center">
             <div className="col-lg-8 col-md-10">
-              <h6 className="custom-font wow fadeInDown" data-wow-delay=".3s">
-                How We Do It
+              <h6 className="sub-title main-color mb-10 ls10 wow fadeInDown" data-wow-delay=".3s" style={{ color: '#B68C4A', letterSpacing: '4px', textTransform: 'uppercase', fontWeight: '500' }}>
+                HOW WE DO IT
               </h6>
               <h4 className="playfont wow flipInX" data-wow-delay=".5s">
                 How Our Online Quoting System Works

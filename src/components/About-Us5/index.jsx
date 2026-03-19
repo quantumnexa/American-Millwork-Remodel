@@ -3,7 +3,7 @@ import Split from "../Split";
 
 const AboutUs5 = () => {
   return (
-    <section className="about2 section-padding">
+    <section className="about2 section-padding bg-light-section">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">

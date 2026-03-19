@@ -12,8 +12,9 @@ import Link from "next/link";
 import removeSlashFromPagination from "../../common/removeSlashFromPagination";
 SwiperCore.use([Navigation, Pagination, Parallax]);
 
-const IntroWithVertical = () => {
+const IntroWithVertical = ({ customData }) => {
   const [load, setLoad] = React.useState(true);
+  const sliderData = customData || intro2Data;
   React.useEffect(() => {
     setTimeout(() => {
       removeSlashFromPagination();
@@ -82,7 +83,7 @@ const IntroWithVertical = () => {
               }}
               className="swiper-wrapper cta__slider"
             >
-              {intro2Data.map((slide) => (
+              {sliderData.map((slide) => (
                 <SwiperSlide
                   key={slide.id}
                   className="cta__slider-item swiper-slide"
@@ -100,13 +101,14 @@ const IntroWithVertical = () => {
                             <span className="top-corn"></span>
                             <span className="bottom-corn"></span>
                             <div className="custom-font">
-                              <h5 className="thin custom-font">
+                              <h5 className="thin custom-font text-highlight" style={{ color: '#B68C4A', letterSpacing: '4px', fontWeight: '500' }}>
                                 {slide.title.first}
                               </h5>
                               <Split>
                                 <h1
                                   data-splitting
                                   className="words chars splitting"
+                                  style={{ whiteSpace: 'nowrap', fontSize: '55px' }}
                                 >
                                   <Link href="#">{slide.title.second}</Link>
                                 </h1>
@@ -118,18 +120,26 @@ const IntroWithVertical = () => {
                                 {slide.content.second}
                               </p>
                             )}
-                            <div className="buttons-row valign" style={{display: 'flex', gap: '30px'}}>
-                              <Link href="/work1">
+                            {customData ? (
+                              <Link href="/about">
                                 <a className="btn-curve btn-color mt-30">
-                                  <span>Get My Quote</span>
+                                  <span>Read More</span>
                                 </a>
                               </Link>
-                              <Link href="/contact">
-                                <a className="btn-curve btn-lit mt-30">
-                                  <span>Contact Us</span>
-                                </a>
-                              </Link>
-                            </div>
+                            ) : (
+                              <div className="buttons-row valign" style={{display: 'flex', gap: '30px'}}>
+                                <Link href="/work1">
+                                  <a className="btn-curve btn-color mt-30">
+                                    <span>Get My Quote</span>
+                                  </a>
+                                </Link>
+                                <Link href="/contact">
+                                  <a className="btn-curve btn-lit mt-30">
+                                    <span>Contact Us</span>
+                                  </a>
+                                </Link>
+                              </div>
+                            )}
                           </div>
                         </div>
                       </div>
