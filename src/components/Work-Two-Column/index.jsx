@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import initIsotope from "../../common/initIsotope";
 
-export const WorkTwoColumn = () => {
+export const WorkTwoColumn = ({ lightTheme = false }) => {
   React.useEffect(() => {
     setTimeout(() => {
       if (window.Isotope) initIsotope();
@@ -11,12 +11,12 @@ export const WorkTwoColumn = () => {
   }, []);
   return (
     <>
-      <section className="works filter-img section-padding">
+      <section className={`works filter-img section-padding ${lightTheme ? 'bg-light-section' : ''}`}>
         <div className="container">
           <div className="row gallery">
             <div className="col-lg-6 items mt-0 interior theaters residential">
               <div className="section-head mb-0">
-                <h3>Works</h3>
+                <h3 className="playfont" style={{ fontSize: '40px', color: '#111' }}>Works</h3>
 
                 <div className="filtering mt-30">
                   <div className="filter">

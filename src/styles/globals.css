@@ -257,7 +257,24 @@ body.hideX .pace {
     border: 0;
 }
 
-/* Padding helpers for combining sections */
+/* Navbar Hover Dropdown Fixes */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar .dropdown .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+  }
+}
 .pt-80 {
   padding-top: 80px !important;
 }
@@ -405,6 +422,22 @@ body.hideX .pace {
   -webkit-text-stroke: 0px transparent !important;
   -webkit-text-fill-color: #fff !important;
   color: #fff !important;
+}
+
+.call-action.next {
+  background: #4A3428 !important;
+}
+
+.call-action.next:before,
+.call-action.next:after {
+  background: #4A3428 !important;
+  opacity: 0.9 !important;
+}
+
+.call-action.next:hover:before,
+.call-action.next:hover:after {
+  background: #4A3428 !important;
+  opacity: 1 !important;
 }
 
 @media screen and (max-width: 991px) {
@@ -759,4 +792,59 @@ footer {
 
 .services .item-bx:hover {
   background-color: #f8f4f3 !important;
+}
+
+/* Work Two Column Light Theme Fix */
+.works.filter-img.bg-light-section {
+  background-color: #fff;
+}
+
+.works.filter-img.bg-light-section .section-head h3 {
+  color: #111;
+}
+
+.works.filter-img.bg-light-section .filtering span {
+  color: #555;
+}
+
+.works.filter-img.bg-light-section .filtering span.active {
+  color: #B68C4A;
+}
+
+.works.filter-img.bg-light-section .item .cont {
+  background: #fff !important;
+  border: 1px solid #eee !important;
+  opacity: 0 !important;
+  bottom: -20px !important;
+  left: 5% !important;
+  padding: 30px !important;
+  position: absolute !important;
+  z-index: 2 !important;
+  transition: all 0.4s !important;
+  width: 90% !important;
+  visibility: hidden !important;
+  text-align: left;
+}
+
+.works.filter-img.bg-light-section .item:hover .cont {
+  opacity: 1 !important;
+  bottom: 0 !important;
+  left: 5% !important;
+  visibility: visible !important;
+}
+
+.works.filter-img.bg-light-section .item:after {
+  display: none !important;
+}
+
+.works.filter-img.bg-light-section .item .cont h5 a {
+  color: #111 !important;
+}
+
+.works.filter-img.bg-light-section .item .cont span {
+  color: #777 !important;
+}
+
+.works.filter-img.bg-light-section .item .cont h5 a:hover {
+  color: #B68C4A !important;
 }

@@ -65,52 +65,31 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
                   <a className="nav-link">About</a>
                 </Link>
               </li>
-              <li className="nav-item dropdown" onClick={handleDropdown}>
-                <span
-                  className="nav-link dropdown-toggle"
-                  data-toggle="dropdown"
-                  href="#"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Portfolio
-                </span>
+              <li className="nav-item dropdown">
+                <Link href="/services">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                </Link>
                 <div className="dropdown-menu">
-                  <Link href="/work1">
-                    <a className="dropdown-item">Two Column</a>
+                  <Link href="/services1">
+                    <a className="dropdown-item">Commercial Millwork & Interiors</a>
                   </Link>
-                  <Link href="/work2">
-                    <a className="dropdown-item">Three Column</a>
+                  <Link href="/services2">
+                    <a className="dropdown-item">Residential Remodeling Materials</a>
                   </Link>
-                  <Link href="/work3">
-                    <a className="dropdown-item">Four Column</a>
-                  </Link>
-                  <Link href="/project-details">
-                    <a className="dropdown-item">Single Project</a>
+                  <Link href="/services3">
+                    <a className="dropdown-item">Technical & Design Support</a>
                   </Link>
                 </div>
               </li>
-              <li className="nav-item dropdown" onClick={handleDropdown}>
-                <span
-                  className="nav-link dropdown-toggle"
-                  data-toggle="dropdown"
-                  href="#"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Blog
-                </span>
-                <div className="dropdown-menu">
-                  <Link href="/blogs">
-                    <a className="dropdown-item">Blogs</a>
-                  </Link>
-                  <Link href="/blog-details">
-                    <a className="dropdown-item">Post Details</a>
-                  </Link>
-                </div>
-              </li>
+
               <li className="nav-item">
                 <Link href="/contact">
                   <a className="nav-link">Contact</a>

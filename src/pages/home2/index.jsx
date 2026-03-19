@@ -27,7 +27,7 @@ const Home1 = () => {
       <IntroWithVertical />
       <div className="bg-white">
         <AboutUs2 />
-        <Services2 />
+        <Services3 />
       </div>
       <div className="bg-gray">
         <Services5Light />
@@ -39,9 +39,6 @@ const Home1 = () => {
         <Skills2 />
       </div>
       <div className="bg-white">
-        <Services3 />
-      </div>
-      <div className="bg-gray">
         <Process />
       </div>
       {/* <div className="bg-white">

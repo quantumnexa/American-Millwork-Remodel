@@ -52,7 +52,7 @@ const NextProject = ({
       </div>
       <div
         className="nxt-img bg-img"
-        style={{ backgroundImage: 'url(/assets/img/portfolio/project1/bg.jpg)' }}
+        style={{ backgroundImage: 'none' }}
       ></div>
     </section>
   );
