@@ -36,9 +36,9 @@ const Services3 = ({ bigTitle, grid }) => {
           {services3Data.map((item, index) => (
             <div className="col-lg-4" key={item.id}>
               <div
-                className="item-bx bg-img wow fadeInUp"
+                className="item-bx wow fadeInUp"
                 data-wow-delay={index == 0 ? ".3s" : index == 1 ? ".5s" : ".7s"}
-                style={{ backgroundImage: `url(${item.image})` }}
+                style={{ backgroundColor: '#f8f4f3', border: 'none' }}
               >
                 <span className={item.icon}></span>
                 <h6 className="mb-20">{item.title}</h6>

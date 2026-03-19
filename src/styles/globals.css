@@ -724,3 +724,39 @@ footer {
 .services .item-sm .numb:after {
   display: none !important; /* Hide the horizontal line */
 }
+
+/* Services3 Background Fix */
+.services .item-bx {
+  background-color: #f8f4f3 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+.services .item-bx:before {
+  display: none !important;
+}
+
+.services .item-bx p {
+  color: #555 !important;
+}
+
+.services .item-bx h6 {
+  color: #111 !important;
+}
+
+.services .item-bx .icon {
+  color: #B68C4A !important;
+}
+
+.services .item-bx span[class*="flaticon-"] {
+  color: #B68C4A !important;
+}
+
+.services .item-bx .more {
+  color: #B68C4A !important;
+}
+
+.services .item-bx:hover {
+  background-color: #f8f4f3 !important;
+}
