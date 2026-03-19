@@ -1,0 +1,27 @@
+{
+  "title": {
+    "first": "One Platform For Millwork, Remodeling And Finishes"
+  },
+  "image1": "/assets/img/ab1.jpg",
+  "image2": "/assets/img/ab2.jpg",
+  "content": "A modern system for millwork, remodeling, and interior finishes. We combine commercial millwork expertise with residential material supply and remote project coordination to simplify the entire building and remodeling process.",
+  "exp": 20,
+  "textList": [
+    {
+      "id": 1,
+      "name": "Commercial Millwork Expertise"
+    },
+    {
+      "id": 2,
+      "name": "Residential Material Supply"
+    },
+    {
+      "id": 3,
+      "name": "Remote Project Coordination"
+    },
+    {
+      "id": 4,
+      "name": "Simplified Building Process"
+    }
+  ]
+}

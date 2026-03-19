@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/img/01.jpg",
+    "icon": "icon flaticon-home-1",
+    "title": "Commercial Millwork & Interior Finishes",
+    "content": "This is your highest-value B2B service category.",
+    "coreServices": [
+      "Custom commercial millwork",
+      "Restaurant interiors & finish carpentry",
+      "Franchise interior finish packages",
+      "Lobby & reception millwork",
+      "Retail display millwork",
+      "Office feature walls & paneling"
+    ],
+    "interiorFeatures": [
+      "Decorative wall paneling",
+      "Decorative ceiling features",
+      "Banquette seating",
+      "Custom counters & host stands",
+      "Custom shelving & retail displays",
+      "Trim & finish carpentry scopes"
+    ],
+    "typicalApplications": [
+      "Restaurants",
+      "Franchise locations",
+      "Retail stores",
+      "Office interiors",
+      "Hospitality spaces",
+      "Lobby and reception areas"
+    ]
+  },
+  {
+    "id": 2,
+    "image": "/assets/img/02.jpg",
+    "icon": "icon flaticon-living-room",
+    "title": "Residential Remodeling Materials & Finishes",
+    "content": "This category is focused on homeowners and property owners who need materials and project coordination.",
+    "kitchenRemodeling": [
+      "Kitchen cabinets",
+      "Countertops",
+      "Backsplash coordination",
+      "Kitchen trim & finishes",
+      "Kitchen flooring upgrades"
+    ],
+    "bathroomRemodeling": [
+      "Bathroom vanities",
+      "Storage cabinets",
+      "Tile coordination",
+      "Bathroom trim and finishes",
+      "Bathroom material packages"
+    ],
+    "flooringInteriorFinishes": [
+      "Luxury vinyl plank flooring",
+      "Engineered wood flooring",
+      "Tile flooring coordination",
+      "Trim upgrades",
+      "Finish carpentry packages"
+    ]
+  },
+  {
+    "id": 3,
+    "image": "/assets/img/03.jpg",
+    "icon": "icon flaticon-interior-design",
+    "title": "Design, Planning & Production Support",
+    "content": "This supports both commercial and residential projects.",
+    "shopDrawings": [
+      "Millwork shop drawings",
+      "Production drawings",
+      "Installation coordination drawings"
+    ],
+    "projectPlanningSupport": [
+      "Scope planning",
+      "Layout review from photos and measurements",
+      "Material quote preparation"
+    ],
+    "remoteProjectIntake": [
+      "Photo submissions",
+      "Measurement submissions",
+      "Video walkthroughs",
+      "Online consultations"
+    ]
+  }
+]
