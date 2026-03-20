@@ -34,7 +34,7 @@ const Services = () => {
           content: {
             first: "We provide custom millwork, finish carpentry, kitchen and bathroom remodeling materials, flooring, and shop drawing support for commercial and residential projects."
           },
-          image: "/assets/img/slid/3.jpg"
+          image: "/assets/img/new-images/hero-section/custom-interior-finish.png"
         }]}
       />
       <div className="bg-white">

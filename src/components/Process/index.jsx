@@ -25,11 +25,12 @@ const Process = () => {
             data-wow-delay=".3s"
           >
             <div className="item">
-              <div
-                className="bg-img"
-                style={{ backgroundImage: `url(/assets/img/process/01.jpg)` }}
-              >
-                <h3 className="numb custom-font">01</h3>
+              <div style={{ overflow: 'hidden', borderRadius: '50%', width: '150px', height: '150px', margin: '0 auto 30px' }}>
+                <div
+                  className="bg-img"
+                  style={{ backgroundImage: `url(/assets/img/new-images/process/1.png)`, width: '100%', height: '100%' }}
+                >
+                </div>
               </div>
               <div className="cont">
                 <h6 className="mb-10">STEP 1</h6>
@@ -42,11 +43,12 @@ const Process = () => {
             data-wow-delay=".5s"
           >
             <div className="item">
-              <div
-                className="bg-img"
-                style={{ backgroundImage: `url(/assets/img/process/02.jpg)` }}
-              >
-                <h3 className="numb custom-font">02</h3>
+              <div style={{ overflow: 'hidden', borderRadius: '50%', width: '150px', height: '150px', margin: '0 auto 30px' }}>
+                <div
+                  className="bg-img"
+                  style={{ backgroundImage: `url(/assets/img/new-images/process/2.png)`, width: '100%', height: '100%' }}
+                >
+                </div>
               </div>
               <div className="cont">
                 <h6 className="mb-10">STEP 2</h6>
@@ -59,11 +61,12 @@ const Process = () => {
             data-wow-delay=".4s"
           >
             <div className="item">
-              <div
-                className="bg-img"
-                style={{ backgroundImage: `url(/assets/img/process/03.jpg)` }}
-              >
-                <h3 className="numb custom-font">03</h3>
+              <div style={{ overflow: 'hidden', borderRadius: '50%', width: '150px', height: '150px', margin: '0 auto 30px' }}>
+                <div
+                  className="bg-img"
+                  style={{ backgroundImage: `url(/assets/img/new-images/process/3.png)`, width: '100%', height: '100%' }}
+                >
+                </div>
               </div>
               <div className="cont">
                 <h6 className="mb-10">STEP 3</h6>
@@ -76,11 +79,12 @@ const Process = () => {
             data-wow-delay=".6s"
           >
             <div className="item">
-              <div
-                className="bg-img"
-                style={{ backgroundImage: `url(/assets/img/process/04.jpg)` }}
-              >
-                <h3 className="numb custom-font">04</h3>
+              <div style={{ overflow: 'hidden', borderRadius: '50%', width: '150px', height: '150px', margin: '0 auto 30px' }}>
+                <div
+                  className="bg-img"
+                  style={{ backgroundImage: `url(/assets/img/new-images/process/4.png)`, width: '100%', height: '100%' }}
+                >
+                </div>
               </div>
               <div className="cont">
                 <h6 className="mb-10">STEP 4</h6>
@@ -93,11 +97,12 @@ const Process = () => {
             data-wow-delay=".7s"
           >
             <div className="item">
-              <div
-                 className="bg-img"
-                 style={{ backgroundImage: `url(/assets/img/process/04.jpg)` }}
-               >
-                 <h3 className="numb custom-font">05</h3>
+              <div style={{ overflow: 'hidden', borderRadius: '50%', width: '150px', height: '150px', margin: '0 auto 30px' }}>
+                <div
+                   className="bg-img"
+                   style={{ backgroundImage: `url(/assets/img/new-images/process/5.png)`, width: '100%', height: '100%' }}
+                 >
+                 </div>
                </div>
               <div className="cont">
                 <h6 className="mb-10">STEP 5</h6>

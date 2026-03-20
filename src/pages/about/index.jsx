@@ -33,7 +33,7 @@ const About = () => {
           content: {
             first: "American Millwork & Remodel was created to solve two common problems in the market: clients struggle to find reliable custom finish solutions for commercial interiors, and many homeowners want fast pricing for kitchens and bathrooms without waiting through a slow traditional process."
           },
-          image: "/assets/img/slid/3.jpg"
+          image: "/assets/img/new-images/hero-section/custom-kitchen-and-bath.png"
         }]}
       />
       {/* <PageHeader
@@ -72,8 +72,9 @@ const About = () => {
             { icon: "flaticon-renovation", text: "Installation coordination support" }
           ]}
           imageLeft={true}
-          image1="/assets/img/ab1.jpg"
-          image2="/assets/img/ab2.jpg"
+          image1="/assets/img/new-images/what-we-do/1.png"
+          image2="/assets/img/new-images/what-we-do/2.png"
+          
         />
       </div>
       {/* <div className="bg-white">

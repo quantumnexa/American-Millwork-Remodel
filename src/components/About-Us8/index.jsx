@@ -18,8 +18,8 @@ const AboutUs8 = ({
     { icon: "flaticon-renovation", text: "Local install coordination when needed" },
   ],
   imageLeft = false,
-  image1 = "/assets/img/ab1.jpg",
-  image2 = "/assets/img/ab2.jpg"
+  image1 = "/assets/img/new-images/trust-section/2.png",
+  image2 = "/assets/img/new-images/trust-section/1.png"
 }) => {
 
   return (

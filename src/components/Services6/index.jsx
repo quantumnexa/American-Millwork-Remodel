@@ -8,7 +8,7 @@ const Services6 = ({ subTitle, title, text, projectTypes = [] }) => {
         <div className="row">
           <div className="col-lg-6">
             <div className="img md-mb50">
-              <img src="/assets/img/feat.jpg" alt="" />
+              <img src="/assets/img/new-images/what-we-do/5.png" alt="" />
             </div>
           </div>
           <div className="col-lg-6 valign">

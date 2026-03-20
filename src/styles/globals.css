@@ -403,6 +403,12 @@ body.hideX .pace {
   width: 200px !important;
 }
 
+/* Active link highlight */
+.navbar .nav-link.active,
+.navbar .dropdown-item.active {
+  color: #B68C4A !important;
+}
+
 /* Intro-with-horizontal Heading Size */
 .slider .caption h1, .cta__slider-item .caption h1 {
   font-size: 55px !important;
@@ -599,15 +605,136 @@ body.hideX .pace {
   color: #111 !important;
 }
 
-/* Footer Full-Width & No Padding */
+/* Footer Styling */
 footer {
+  background-color: #1a1a1a !important; /* Dark background for contrast */
+  color: #f0f0f0 !important; /* Light text color */
+  padding: 80px 0 !important; /* More vertical padding */
   width: 100% !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
   margin-bottom: 0 !important;
-  padding: 40px 0 !important;
   border-radius: 0 !important;
+  text-align: left; /* Align text to left */
+  position: relative;
 }
+
+footer .item .title h5 {
+  color: #f0f0f0 !important; /* White color for titles */
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Subtle dotted/checkered background like Process section */
+footer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/assets/img/line-pattern.png);
+  background-repeat: repeat;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+footer .item ul li {
+  margin-bottom: 10px; /* Reduced margin for tighter list */
+  display: block; /* Change to block for vertical list */
+  align-items: flex-start;
+}
+
+footer .item ul li .icon {
+  display: none; /* Hide icons */
+}
+
+footer .item ul li .cont p,
+footer .item ul li .cont h6 {
+  color: #999 !important; /* Lighter grey for content text */
+  margin-bottom: 0;
+  font-size: 14px; /* Smaller font size */
+  line-height: 1.6;
+}
+
+footer .item ul li .cont a {
+  color: #999 !important; /* Lighter grey for links */
+  transition: color 0.3s ease;
+  font-size: 14px; /* Smaller font size for links */
+}
+
+footer .item ul li .cont a:hover {
+  color: #B68C4A !important; /* Accent color on hover */
+}
+
+footer .item .social a {
+  color: #f0f0f0 !important;
+  border: 1px solid #f0f0f0 !important;
+  width: 35px; /* Smaller social icons */
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+footer .item .social a:hover {
+  background-color: #B68C4A !important;
+  border-color: #B68C4A !important;
+  color: #fff !important;
+}
+
+footer .copy-right p {
+  color: #999 !important;
+  font-size: 13px; /* Smaller copyright text */
+  margin-top: 30px;
+}
+
+footer .item .text-left p {
+  color: #999 !important;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Footer bottom (copyright + legal links) */
+footer .footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+footer .footer-bottom .right a {
+  color: #999 !important;
+  margin-left: 15px;
+  transition: color .3s ease;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer .footer-bottom .right a:hover {
+  color: #B68C4A !important;
+}
+
+/* Footer Column Layout (Grid) */
+@media (min-width: 992px) {
+  footer .footer-grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  footer .footer-grid > * {
+    flex: 0 0 auto; /* content-based width */
+  }
+  footer .footer-col-40 {
+    max-width: 520px; /* keep long text readable but content-driven */
+  }
+}
+
+/* Existing Footer Full-Width & No Padding (modified) */
+/* This section is now integrated into the general footer styling above */
 
 .about-us-8 .pl-60 {
   padding-left: 60px;
@@ -708,6 +835,11 @@ footer {
   margin: 0 !important;
 }
 
+.col-lg-2-4 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
 .col-lg-2-4, .services-grid-10 .swiper-slide {
    position: relative;
    width: 100%;
@@ -792,6 +924,17 @@ footer {
 
 .services .item-bx:hover {
   background-color: #f8f4f3 !important;
+}
+
+/* Process Hover Effect */
+.process .item .bg-img {
+  transition: transform 0.5s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.process .item:hover .bg-img {
+  transform: scale(1.2);
 }
 
 /* Work Two Column Light Theme Fix */

@@ -3,8 +3,12 @@ import React from "react";
 import Link from "next/link";
 import appData from "../../data/app.json";
 import getSiblings from '../../common/getSiblings'
+import { useRouter } from "next/router";
 
 const Navbar = ({ navbarRef, logoRef, logoClass }) => {
+  const router = useRouter();
+  const isActive = (path) => router.pathname === path;
+  const isServicesActive = () => router.pathname.startsWith("/services");
   const handleDropdown = (e) => {
     getSiblings(e.target.parentElement)
       .filter((item) => item.classList.contains("show"))
@@ -57,18 +61,18 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <Link href="/">
-                  <a className="nav-link">Home</a>
+                  <a className={`nav-link ${isActive("/") ? "active" : ""}`}>Home</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/about">
-                  <a className="nav-link">About</a>
+                  <a className={`nav-link ${isActive("/about") ? "active" : ""}`}>About</a>
                 </Link>
               </li>
               <li className="nav-item dropdown">
                 <Link href="/services">
                   <a
-                    className="nav-link dropdown-toggle"
+                    className={`nav-link dropdown-toggle ${isServicesActive() ? "active" : ""}`}
                     data-toggle="dropdown"
                     role="button"
                     aria-haspopup="true"
@@ -79,20 +83,20 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
                 </Link>
                 <div className="dropdown-menu">
                   <Link href="/services1">
-                    <a className="dropdown-item">Commercial Millwork & Interiors</a>
+                    <a className={`dropdown-item ${isActive("/services1") ? "active" : ""}`}>Commercial Millwork & Interiors</a>
                   </Link>
                   <Link href="/services2">
-                    <a className="dropdown-item">Residential Remodeling Materials</a>
+                    <a className={`dropdown-item ${isActive("/services2") ? "active" : ""}`}>Residential Remodeling Materials</a>
                   </Link>
                   <Link href="/services3">
-                    <a className="dropdown-item">Technical & Design Support</a>
+                    <a className={`dropdown-item ${isActive("/services3") ? "active" : ""}`}>Technical & Design Support</a>
                   </Link>
                 </div>
               </li>
 
               <li className="nav-item">
                 <Link href="/contact">
-                  <a className="nav-link">Contact</a>
+                  <a className={`nav-link ${isActive("/contact") ? "active" : ""}`}>Contact</a>
                 </Link>
               </li>
             </ul>
