@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import IntroWithVertical from "../../components/Intro-with-vertical-2";
+import IntroWithVerticalTwo from "../../components/Intro-with-vertical-2";
 import LightLayout from "../../layouts/light";
 import AboutUs8 from "../../components/About-Us8";
 import NextProject from "../../components/Next-Project";
@@ -12,7 +12,7 @@ const Services1 = () => {
 
   return (
     <LightLayout>
-      <IntroWithVertical 
+      <IntroWithVerticalTwo 
         customData={[{
           id: 1,
           title: {
