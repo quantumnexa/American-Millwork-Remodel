@@ -35,20 +35,22 @@ const Services3 = ({ bigTitle, grid }) => {
         <div className="row">
           {services3Data.map((item, index) => (
             <div className="col-lg-4" key={item.id}>
-              <div
-                className="item-bx wow fadeInUp"
-                data-wow-delay={index == 0 ? ".3s" : index == 1 ? ".5s" : ".7s"}
-                style={{ backgroundColor: '#f8f4f3', border: 'none' }}
-              >
-                <span className={item.icon}></span>
-                <h6 className="mb-20">{item.title}</h6>
-                <p>{item.content}</p>
-                <Link href={`/services${index+1}`}>
-                  <a className={`more ${!grid ? "custom-font" : ""} mt-30`}>
-                    Read More
-                  </a>
-                </Link>
-              </div>
+              <Link href={`/services${index+1}`}>
+                <a className="service-card-link" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
+                  <div
+                    className="item-bx wow fadeInUp"
+                    data-wow-delay={index == 0 ? ".3s" : index == 1 ? ".5s" : ".7s"}
+                    style={{ backgroundColor: '#f8f4f3', border: 'none' }}
+                  >
+                    <span className={item.icon}></span>
+                    <h6 className="mb-20">{item.title}</h6>
+                    <p>{item.content}</p>
+                    <span className={`more ${!grid ? "custom-font" : ""} mt-30`}>
+                      Read More
+                    </span>
+                  </div>
+                </a>
+              </Link>
             </div>
           ))}
         </div>
