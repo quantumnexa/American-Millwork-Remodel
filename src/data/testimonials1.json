@@ -2,29 +2,23 @@
     {
         "id": 1,
         "image": "/assets/img/team/1.jpg",
-        "content": "The custom walnut cabinets they built for our kitchen are breathtaking. The attention to detail in the grain matching is superb.",
+        "content": "The design concept helped us understand exactly what our kitchen would look like before we started.",
         "username": "Sarah L.",
         "usertitle": "Homeowner"
     },
     {
       "id": 2,
       "image": "/assets/img/team/2.jpg",
-      "content": "Professional shop drawings and fast quotes. They made the millwork package for our new restaurant effortless.",
+      "content": "The process was smooth and the materials were excellent quality.",
       "username": "James D.",
       "usertitle": "Restaurant Owner"
     },
     {
       "id": 3,
       "image": "/assets/img/team/3.jpg",
-      "content": "High-quality materials and excellent coordination. Our bathroom remodel was completed on time and looks premium.",
+      "content": "The custom millwork in our restaurant completely transformed the space.",
       "username": "Michael R.",
       "usertitle": "Homeowner"
-    },
-    {
-      "id": 4,
-      "image": "/assets/img/team/4.jpg",
-      "content": "Best in the business for commercial interior finishes. Trustworthy and design-focused.",
-      "username": "Linda K.",
-      "usertitle": "Interior Designer"
     }
+  
 ]

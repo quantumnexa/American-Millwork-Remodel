@@ -103,9 +103,7 @@ class Testimonials1 extends React.Component {
                         <p className="">&quot;{item.content}&quot;</p>
                       </div>
                       <div className="info">
-                        <div className="author">
-                          <img src={item.image} alt="" />
-                        </div>
+                       
                         <h6>
                           {item.username} <span>{item.usertitle}</span>
                         </h6>

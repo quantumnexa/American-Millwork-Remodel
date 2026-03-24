@@ -2,6 +2,7 @@
 import React from "react";
 import LightLayout from "../../layouts/light";
 import IntroWithVertical from "../../components/Intro-with-vertical-2";
+import Testimonial1 from "../../components/Testimonials1";
 
 const TestimonialsPage = () => {
   React.useEffect(() => {
@@ -24,7 +25,7 @@ const TestimonialsPage = () => {
         ]}
       />
 
-      <section className="section-padding bg-white">
+      {/* <section className="section-padding bg-white">
         <div className="container">
           <div className="row">
             <div className="col-lg-10 offset-lg-1">
@@ -40,7 +41,8 @@ const TestimonialsPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <Testimonial1/>
     </LightLayout>
   );
 };

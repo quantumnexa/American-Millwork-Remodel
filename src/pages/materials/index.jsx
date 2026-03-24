@@ -21,7 +21,7 @@ const MaterialsPage = () => {
               first:
                 "Selecting the right materials is one of the most important steps in a successful remodeling or interior finish project.",
             },
-            image: "/assets/img/hero/2.png",
+            image: "/assets/img/hero/1.png",
           },
         ]}
       />

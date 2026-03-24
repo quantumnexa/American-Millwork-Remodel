@@ -443,6 +443,44 @@ body.hideX .pace {
   padding-left: 18px;
 }
 
+/* FAQ accordion */
+.faq-accordion .faq-item {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background: #fff;
+}
+.faq-accordion .faq-q {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  background: #fff;
+  color: #111;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+.faq-accordion .faq-q:hover {
+  background: #f8f4f3;
+}
+.faq-accordion .faq-a {
+  display: none;
+  padding: 0 20px 18px 20px;
+  color: #555;
+}
+.faq-accordion .faq-item.open .faq-a {
+  display: block;
+}
+.faq-accordion .faq-q i {
+  color: #B68C4A;
+}
+
 /* Improve mobile scroll behavior for hero slider */
 @media (max-width: 991px) {
   .cta__slider-wrapper {
