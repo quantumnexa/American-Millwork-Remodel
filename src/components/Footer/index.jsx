@@ -38,6 +38,11 @@ const Footer = ({ classText }) => {
                 
                 <li>
                   <div className="cont">
+                    <Link href="/portfolio"><a>Portfolio</a></Link>
+                  </div>
+                </li>
+                <li>
+                  <div className="cont">
                     <Link href="/about"><a>About</a></Link>
                   </div>
                 </li>
