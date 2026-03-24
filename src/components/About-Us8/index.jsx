@@ -19,7 +19,8 @@ const AboutUs8 = ({
   ],
   imageLeft = false,
   image1 = "/assets/img/new-images/trust-section/2.png",
-  image2 = "/assets/img/new-images/trust-section/1.png"
+  image2 = "/assets/img/new-images/trust-section/1.png",
+  singleImage = false
 }) => {
 
   return (
@@ -30,18 +31,24 @@ const AboutUs8 = ({
             <>
               <div className="col-lg-6">
                 <div className="img-collage wow fadeInUp" data-wow-delay=".3s">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="img mb-30">
-                        <img src={image1} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
+                  {singleImage ? (
+                    <div className="img">
+                      <img src={image1} alt="" style={{ width: '100%', borderRadius: '10px', height: '500px', objectFit: 'cover' }} />
+                    </div>
+                  ) : (
+                    <div className="row">
+                      <div className="col-md-6">
+                        <div className="img mb-30">
+                          <img src={image1} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        <div className="img mb-30" style={{ marginTop: '50px' }}>
+                          <img src={image2} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
+                        </div>
                       </div>
                     </div>
-                    <div className="col-md-6">
-                      <div className="img mb-30" style={{ marginTop: '50px' }}>
-                        <img src={image2} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
-                      </div>
-                    </div>
-                  </div>
+                  )}
                 </div>
               </div>
               <div className="col-lg-6 valign">
@@ -107,18 +114,24 @@ const AboutUs8 = ({
               </div>
               <div className="col-lg-6 order1 order-lg-2">
                 <div className="img-collage wow fadeInUp" data-wow-delay=".3s">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="img mb-30">
-                        <img src={image1} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
+                  {singleImage ? (
+                    <div className="img">
+                      <img src={image1} alt="" style={{ width: '100%', borderRadius: '10px', height: '500px', objectFit: 'cover' }} />
+                    </div>
+                  ) : (
+                    <div className="row">
+                      <div className="col-md-6">
+                        <div className="img mb-30">
+                          <img src={image1} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        <div className="img mb-30" style={{ marginTop: '50px' }}>
+                          <img src={image2} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
+                        </div>
                       </div>
                     </div>
-                    <div className="col-md-6">
-                      <div className="img mb-30" style={{ marginTop: '50px' }}>
-                        <img src={image2} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
-                      </div>
-                    </div>
-                  </div>
+                  )}
                 </div>
               </div>
             </>

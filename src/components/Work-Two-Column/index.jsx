@@ -23,9 +23,9 @@ export const WorkTwoColumn = ({ lightTheme = false }) => {
                     <span data-filter="*" className="active">
                       All
                     </span>
-                    <span data-filter=".interior">Interior</span>
-                    <span data-filter=".theaters">Theaters</span>
-                    <span data-filter=".residential">Residential</span>
+                    <span data-filter=".interior">Kitchen</span>
+                    <span data-filter=".theaters">Bathroom</span>
+                    <span data-filter=".residential">Commercial</span>
                   </div>
                 </div>
               </div>

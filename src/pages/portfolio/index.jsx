@@ -4,6 +4,7 @@ import LightLayout from "../../layouts/light";
 import IntroWithVerticalTwo from "../../components/Intro-with-vertical-2";
 import { WorkTwoColumn } from "../../components/Work-Two-Column";
 import NextProject from "../../components/Next-Project";
+import AboutUs8 from "../../components/About-Us8";
 
 const PortfolioPage = () => {
   React.useEffect(() => {
@@ -26,36 +27,48 @@ const PortfolioPage = () => {
         ]}
       />
 
-      <div className="bg-white">
-        <WorkTwoColumn lightTheme={true} />
+      <div className="bg-white pt-80">
+        <AboutUs8
+          subTitle="PROJECT"
+          title="Modern Kitchen Transformation"
+          text="Example of a modern kitchen remodel including cabinetry, island, countertop, and flooring upgrades."
+          imageLeft={true}
+          image1="/assets/img/new/1.png"
+          image2=""
+          points={[]}
+          singleImage={true}
+        />
       </div>
 
-      <section className="section-padding bg-white">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-4 mb-30">
-              <h5 className="mb-15">Modern Kitchen Transformation</h5>
-              <p>
-                Example of a modern kitchen remodel including cabinetry, island,
-                countertop, and flooring upgrades.
-              </p>
-            </div>
-            <div className="col-lg-4 mb-30">
-              <h5 className="mb-15">Spa Style Bathroom</h5>
-              <p>
-                Elegant bathroom featuring custom vanity, stone countertop, and
-                modern shower.
-              </p>
-            </div>
-            <div className="col-lg-4 mb-0">
-              <h5 className="mb-15">Restaurant Millwork</h5>
-              <p>
-                Custom restaurant seating, bar millwork, and wall paneling.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="bg-gray">
+        <AboutUs8
+          subTitle="PROJECT"
+          title="Spa Style Bathroom"
+          text="Elegant bathroom featuring custom vanity, stone countertop, and modern shower."
+          imageLeft={false}
+          image1="/assets/img/hero/2.png"
+          image2=""
+          points={[]}
+          singleImage={true}
+        />
+      </div>
+
+      <div className="bg-white">
+        <AboutUs8
+          subTitle="PROJECT"
+          title="Restaurant Millwork"
+          text="Custom restaurant seating, bar millwork, and wall paneling."
+          imageLeft={true}
+          image1="/assets/img/new/4.png"
+          image2=""
+          points={[]}
+          singleImage={true}
+        />
+      </div>
+
+      {/* <div className="bg-white">
+        <WorkTwoColumn lightTheme={true} />
+      </div> */}
 
       <NextProject
         title="YOUR PROJECT COULD BE NEXT"
@@ -68,4 +81,3 @@ const PortfolioPage = () => {
 };
 
 export default PortfolioPage;
-
