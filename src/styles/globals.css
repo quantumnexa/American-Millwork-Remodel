@@ -461,15 +461,6 @@ a, button, .btn, .nav-link, .dropdown-item, [role="button"], .more, .cta__slider
     font-size: 35px !important;
     white-space: normal !important;
   }
-  /* Mobile: allow page scroll past hero slider */
-  .slid-half .nofull,
-  .cta__slider-wrapper {
-    height: auto !important;
-    min-height: 60vh !important;
-    overflow: visible !important;
-    touch-action: pan-y !important;
-    -webkit-overflow-scrolling: touch;
-  }
 }
 
 .next-project .content h2,
