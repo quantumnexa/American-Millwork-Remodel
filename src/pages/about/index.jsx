@@ -11,7 +11,7 @@ import NextProject from "../../components/Next-Project";
 const About = () => {
   React.useEffect(() => {
     document.querySelector("body").classList.add("homepage");
-  }, []);
+  }, []); 
   return (
     <LightLayout>
       <IntroWithVerticalTwo 
