@@ -108,30 +108,35 @@ const Footer = ({ classText }) => {
               </ul>
             </div>
           </div>
-          {/* <div className="footer-col-15">
-            <div className="item">
+          <div className="footer-col-15">
+            <div className="item md-mb50">
               <div className="title">
                 <h5>Resources</h5>
               </div>
               <ul>
                 <li>
                   <div className="cont">
-                    <Link href="#"><a>Privacy Policy</a></Link>
+                    <Link href="/materials"><a>Material Selection Center</a></Link>
                   </div>
                 </li>
                 <li>
                   <div className="cont">
-                    <Link href="#"><a>Terms of Service</a></Link>
+                    <Link href="/measurements"><a>Measurements Guide</a></Link>
                   </div>
                 </li>
                 <li>
                   <div className="cont">
-                    <Link href="#"><a>Support</a></Link>
+                    <Link href="/faq"><a>FAQ</a></Link>
+                  </div>
+                </li>
+                <li>
+                  <div className="cont">
+                    <Link href="/testimonials"><a>Client Testimonials</a></Link>
                   </div>
                 </li>
               </ul>
             </div>
-          </div> */}
+          </div>
         </div>
         <div className="footer-bottom mt-50">
           <div className="left">
