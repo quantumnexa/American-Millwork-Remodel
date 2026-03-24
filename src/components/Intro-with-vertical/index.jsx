@@ -3,18 +3,19 @@ import intro2Data from "../../data/Intro2.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Split from "../Split";
 
-import SwiperCore, { Navigation, Pagination, Parallax } from "swiper";
+import SwiperCore, { Navigation, Pagination, Parallax, Autoplay } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Link from "next/link";
 import removeSlashFromPagination from "../../common/removeSlashFromPagination";
-SwiperCore.use([Navigation, Pagination, Parallax]);
+SwiperCore.use([Navigation, Pagination, Parallax, Autoplay]);
 
 const IntroWithVertical = ({ customData }) => {
   const [load, setLoad] = React.useState(true);
   const [isMobile, setIsMobile] = React.useState(false);
+  const isHome = !customData;
   const sliderData = customData || intro2Data;
   React.useEffect(() => {
     setTimeout(() => {
@@ -48,6 +49,11 @@ const IntroWithVertical = ({ customData }) => {
             <Swiper
               speed={800}
               parallax={true}
+              autoplay={{
+                delay: 4000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }}
               navigation={{
                 prevEl: navigationPrevRef.current,
                 nextEl: navigationNextRef.current,
@@ -60,9 +66,9 @@ const IntroWithVertical = ({ customData }) => {
               slidesPerView={1}
               direction="vertical"
               loop={true}
-              grabCursor={!isMobile}
-              allowTouchMove={!isMobile}
-              simulateTouch={!isMobile}
+              grabCursor={isHome ? false : !isMobile}
+              allowTouchMove={isHome ? false : !isMobile}
+              simulateTouch={isHome ? false : !isMobile}
               watchSlidesProgress={true}
               onBeforeInit={(swiper) => {
                 swiper.params.navigation.prevEl = navigationPrevRef.current;
