@@ -23,7 +23,7 @@ const Contact = () => {
               first:
                 "Have questions about your project? Contact our team and we will guide you through the next steps.",
             },
-            image: "/assets/img/new-images/hero-section/design-shop.png",
+            image: "/assets/img/new/16.png",
           },
         ]}
       />

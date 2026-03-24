@@ -22,7 +22,7 @@ const Services3Page = () => {
           content: {
             first: "Technical drawings and project coordination support for millwork production, layout planning, and installation preparation."
           },
-          image: "/assets/img/new/14.png"
+          image: "/assets/img/new-images/hero-section/design-shop.png"
         }]}
       />
 

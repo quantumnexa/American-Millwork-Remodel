@@ -409,6 +409,40 @@ body.hideX .pace {
   color: #B68C4A !important;
 }
 
+/* Navbar dropdown UI improvements */
+@media (min-width: 992px) {
+  .navbar .dropdown-menu {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 10px;
+    padding: 8px;
+    min-width: 300px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transform: translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    z-index: 1001;
+  }
+  .navbar .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.navbar .dropdown-item {
+  color: #111 !important;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: background-color .2s ease, color .2s ease, padding-left .2s ease;
+}
+.navbar .dropdown-item:hover {
+  background-color: #f8f4f3;
+  color: #B68C4A !important;
+  padding-left: 18px;
+}
+
 /* Intro-with-horizontal Heading Size */
 .slider .caption h1, .cta__slider-item .caption h1 {
   font-size: 55px !important;
