@@ -1,5 +1,6 @@
 import React from "react";
-import IntroWithVerticalTwo from "../../components/Intro-with-vertical-2";
+import dynamic from "next/dynamic";
+const IntroWithVerticalTwo = dynamic(() => import("../../components/Intro-with-vertical-2"), { ssr: false });
 import LightLayout from "../../layouts/light";
 import ContactInfo from "../../components/Contact-info";
 import ContactWithMap from "../../components/Contact-with-map";
