@@ -14,6 +14,7 @@ SwiperCore.use([Navigation, Pagination, Parallax]);
 
 const IntroWithVertical = ({ customData }) => {
   const [load, setLoad] = React.useState(true);
+  const [isMobile, setIsMobile] = React.useState(false);
   const sliderData = customData || intro2Data;
   React.useEffect(() => {
     setTimeout(() => {
@@ -22,6 +23,14 @@ const IntroWithVertical = ({ customData }) => {
     setTimeout(() => {
       setLoad(false);
     });
+    const updateIsMobile = () => {
+      if (typeof window !== "undefined") {
+        setIsMobile(window.innerWidth <= 991);
+      }
+    };
+    updateIsMobile();
+    window.addEventListener("resize", updateIsMobile);
+    return () => window.removeEventListener("resize", updateIsMobile);
   }, []);
 
   const navigationPrevRef = React.useRef(null);
@@ -51,7 +60,9 @@ const IntroWithVertical = ({ customData }) => {
               slidesPerView={1}
               direction="vertical"
               loop={true}
-              grabCursor={true}
+              grabCursor={!isMobile}
+              allowTouchMove={!isMobile}
+              simulateTouch={!isMobile}
               watchSlidesProgress={true}
               onBeforeInit={(swiper) => {
                 swiper.params.navigation.prevEl = navigationPrevRef.current;

@@ -443,6 +443,13 @@ body.hideX .pace {
   padding-left: 18px;
 }
 
+/* Improve mobile scroll behavior for hero slider */
+@media (max-width: 991px) {
+  .cta__slider-wrapper {
+    touch-action: pan-y;
+  }
+}
+
 /* Cursor consistency: reset default and ensure interactive elements show pointer */
 html, body {
   cursor: default !important;
