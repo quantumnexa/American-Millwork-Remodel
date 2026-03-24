@@ -450,6 +450,21 @@ body.hideX .pace {
   }
 }
 
+/* Process section: stack vertically on mobile */
+@media (max-width: 767px) {
+  .process .row {
+    display: block;
+  }
+  .process .coulmn,
+  .process [class*="col-"] {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .process .coulmn {
+    margin-bottom: 30px;
+  }
+}
+
 /* Cursor consistency: reset default and ensure interactive elements show pointer */
 html, body {
   cursor: default !important;
