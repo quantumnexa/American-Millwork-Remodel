@@ -463,26 +463,6 @@ a, button, .btn, .nav-link, .dropdown-item, [role="button"], .more, .cta__slider
   }
 }
 
-/* Mobile fix: prevent hero slider from trapping scroll */
-@media screen and (max-width: 991px) {
-  .slid-half .nofull,
-  .cta__slider,
-  .cta__slider-wrapper {
-    height: auto !important;
-    min-height: auto !important;
-    overflow: visible !important;
-  }
-  .cta__slider-item .media-wrapper {
-    position: relative !important;
-    height: auto !important;
-  }
-  .cta__slider-item .media-wrapper .bg-img {
-    position: relative !important;
-    width: 100% !important;
-    height: 50vh !important;
-  }
-}
-
 .next-project .content h2,
 .call-action.next .content h2 {
   font-weight: 500 !important;
