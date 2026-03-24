@@ -443,6 +443,14 @@ body.hideX .pace {
   padding-left: 18px;
 }
 
+/* Cursor consistency: reset default and ensure interactive elements show pointer */
+html, body {
+  cursor: default !important;
+}
+a, button, .btn, .nav-link, .dropdown-item, [role="button"], .more, .cta__slider-arrow, .swiper-pagination-bullet {
+  cursor: pointer !important;
+}
+
 /* Intro-with-horizontal Heading Size */
 .slider .caption h1, .cta__slider-item .caption h1 {
   font-size: 55px !important;
