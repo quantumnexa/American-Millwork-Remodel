@@ -3,7 +3,7 @@ import React from "react";
 import AboutUs2 from "../../components/About-Us2";
 import Services2 from "../../components/Services2";
 
-import IntroWithVertical from "../../components/Intro-with-vertical";
+import IntroWithVerticalTwo from "../../components/Intro-with-vertical-2";
 import Process from "../../components/Process";
 import LightLayout from "../../layouts/light";
 import Services3 from "../../components/Services3";
@@ -24,7 +24,7 @@ const Services = () => {
   }, []);
   return (
     <LightLayout>
-      <IntroWithVertical 
+      <IntroWithVerticalTwo 
         customData={[{
           id: 1,
           title: {

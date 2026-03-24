@@ -1,28 +1,46 @@
 import React from "react";
-import PageHeader from "../../components/Page-header";
+import IntroWithVerticalTwo from "../../components/Intro-with-vertical-2";
+import LightLayout from "../../layouts/light";
 import ContactInfo from "../../components/Contact-info";
 import ContactWithMap from "../../components/Contact-with-map";
-import MainLayout from "../../layouts/main";
+import NextProject from "../../components/Next-Project";
 
 const Contact = () => {
-   React.useEffect(() => {
-     document.querySelector("body").classList.add("index3");
-   }, []);
+  React.useEffect(() => {
+    document.querySelector("body").classList.add("homepage");
+  }, []);
   return (
-    <MainLayout>
-      <PageHeader
-        title="Contact Us"
-        fullPath={[
-          { id: 1, name: "home", url: "/" },
-          { id: 2, name: "contact us", url: "/contact" },
+    <LightLayout>
+      <IntroWithVerticalTwo
+        customData={[
+          {
+            id: 1,
+            title: {
+              first: "CONTACT",
+              second: "American Millwork & Remodel",
+            },
+            content: {
+              first:
+                "Have questions about your project? Contact our team and we will guide you through the next steps.",
+            },
+            image: "/assets/img/new-images/hero-section/design-shop.png",
+          },
         ]}
-        image="/assets/img/pg2.jpg"
       />
-      <section className="contact">
-        <ContactInfo />
-        <ContactWithMap />
-      </section>
-    </MainLayout>
+
+      <div className="bg-white">
+        <section className="contact">
+          <ContactInfo />
+          <ContactWithMap />
+        </section>
+      </div>
+
+      <NextProject
+        title="START YOUR PROJECT TODAY"
+        text="Send us a message and our team will guide you through the next steps."
+        btn1Text="Send"
+      />
+    </LightLayout>
   );
 };
 

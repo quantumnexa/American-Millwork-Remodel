@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import IntroWithVertical from "../../components/Intro-with-vertical";
+import IntroWithVertical from "../../components/Intro-with-vertical-2";
 import LightLayout from "../../layouts/light";
 import AboutUs8 from "../../components/About-Us8";
 import NextProject from "../../components/Next-Project";
@@ -22,7 +22,7 @@ const Services2Page = () => {
           content: {
             first: "Material quotes and finish coordination for kitchen remodels, bathroom upgrades, flooring, and interior finish improvements."
           },
-          image: "/assets/img/02.jpg"
+          image: "/assets/img/hero/2.png"
         }]}
       />
 
@@ -32,8 +32,8 @@ const Services2Page = () => {
           title="Kitchen Remodeling"
           text="We provide premium materials and coordination for complete kitchen remodeling projects."
           imageLeft={true}
-          image1="/assets/img/ab1.jpg"
-          image2="/assets/img/ab2.jpg"
+          image1="/assets/img/new/7.png"
+          image2="/assets/img/new/8.png"
           points={[
             { icon: "flaticon-kitchen-1", text: "Kitchen cabinets" },
             { icon: "flaticon-kitchen-2", text: "Countertops" },
@@ -50,8 +50,8 @@ const Services2Page = () => {
           title="Bathroom Remodeling"
           text="Transform your bathroom with our high-quality vanities, cabinets, and material packages."
           imageLeft={false}
-          image1="/assets/img/03.jpg"
-          image2="/assets/img/04.jpg"
+          image1="/assets/img/new/9.png"
+          image2="/assets/img/new/10.png"
           points={[
             { icon: "flaticon-renovation", text: "Bathroom vanities" },
             { icon: "flaticon-furniture", text: "Storage cabinets" },
@@ -68,8 +68,8 @@ const Services2Page = () => {
           title="Flooring & Interior Finishes"
           text="Upgrade your home's interior with our extensive flooring options and finish carpentry packages."
           imageLeft={true}
-          image1="/assets/img/1.jpg"
-          image2="/assets/img/2.jpg"
+          image1="/assets/img/new/11.png"
+          image2="/assets/img/new/12.png"
           points={[
             { icon: "flaticon-house-plan", text: "Luxury vinyl plank flooring" },
             { icon: "flaticon-house-plan", text: "Engineered wood flooring" },

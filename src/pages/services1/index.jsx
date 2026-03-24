@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import IntroWithVertical from "../../components/Intro-with-vertical";
+import IntroWithVertical from "../../components/Intro-with-vertical-2";
 import LightLayout from "../../layouts/light";
 import AboutUs8 from "../../components/About-Us8";
 import NextProject from "../../components/Next-Project";
@@ -22,7 +22,7 @@ const Services1 = () => {
           content: {
             first: "Custom millwork, restaurant interiors, franchise finishes, retail displays, reception desks, feature walls, and finish carpentry for commercial spaces."
           },
-          image: "/assets/img/01.jpg"
+          image: "/assets/img/hero/1.png"
         }]}
       />
 
@@ -32,8 +32,8 @@ const Services1 = () => {
           title="Core Services"
           text="We provide comprehensive commercial millwork and interior finish services designed to meet the demands of B2B projects."
           imageLeft={true}
-          image1="/assets/img/ab1.jpg"
-          image2="/assets/img/ab2.jpg"
+          image1="/assets/img/new/1.png"
+          image2="/assets/img/new/2.png"
           points={[
             { icon: "flaticon-furniture", text: "Custom commercial millwork" },
             { icon: "flaticon-home-1", text: "Restaurant interiors & finish carpentry" },
@@ -51,8 +51,8 @@ const Services1 = () => {
           title="Interior Features & Elements"
           text="Our team specializes in fabricating and coordinating specific interior features to elevate commercial environments."
           imageLeft={false}
-          image1="/assets/img/03.jpg"
-          image2="/assets/img/04.jpg"
+          image1="/assets/img/new/3.png"
+          image2="/assets/img/new/4.png"
           points={[
             { icon: "flaticon-interior-design", text: "Decorative wall paneling" },
             { icon: "flaticon-house-plan", text: "Decorative ceiling features" },
@@ -70,8 +70,8 @@ const Services1 = () => {
           title="Typical Applications"
           text="We deliver high-quality interior finishes for a wide variety of commercial applications."
           imageLeft={true}
-          image1="/assets/img/1.jpg"
-          image2="/assets/img/2.jpg"
+          image1="/assets/img/new/5.png"
+          image2="/assets/img/new/6.png"
           points={[
             { icon: "flaticon-kitchen-1", text: "Restaurants" },
             { icon: "flaticon-living-room", text: "Franchise locations" },

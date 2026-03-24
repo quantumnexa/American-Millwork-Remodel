@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import IntroWithVertical from "../../components/Intro-with-vertical";
+import IntroWithVertical from "../../components/Intro-with-vertical-2";
 import LightLayout from "../../layouts/light";
 import AboutUs8 from "../../components/About-Us8";
 import NextProject from "../../components/Next-Project";
@@ -22,7 +22,7 @@ const Services3Page = () => {
           content: {
             first: "Technical drawings and project coordination support for millwork production, layout planning, and installation preparation."
           },
-          image: "/assets/img/03.jpg"
+          image: "/assets/img/new/14.png"
         }]}
       />
 
@@ -32,8 +32,8 @@ const Services3Page = () => {
           title="Shop Drawings"
           text="Detailed and precise drawings to support production and installation for both commercial and residential projects."
           imageLeft={true}
-          image1="/assets/img/ab1.jpg"
-          image2="/assets/img/ab2.jpg"
+          image1="/assets/img/new/13.png"
+          image2="/assets/img/new/14.png"
           points={[
             { icon: "flaticon-sketch", text: "Millwork shop drawings" },
             { icon: "flaticon-plan", text: "Production drawings" },
@@ -48,8 +48,8 @@ const Services3Page = () => {
           title="Project Planning Support"
           text="We provide comprehensive support for planning the scope and layout of your projects."
           imageLeft={false}
-          image1="/assets/img/03.jpg"
-          image2="/assets/img/04.jpg"
+          image1="/assets/img/new/15.png"
+          image2="/assets/img/new/16.png"
           points={[
             { icon: "flaticon-plan", text: "Scope planning" },
             { icon: "flaticon-interior-design", text: "Layout review from photos and measurements" },
@@ -64,8 +64,8 @@ const Services3Page = () => {
           title="Remote Project Intake"
           text="Our streamlined remote intake process makes it easy to kick off your project from anywhere."
           imageLeft={true}
-          image1="/assets/img/1.jpg"
-          image2="/assets/img/2.jpg"
+          image1="/assets/img/new/1.png"
+          image2="/assets/img/new/8.png"
           points={[
             { icon: "flaticon-computer", text: "Photo submissions" },
             { icon: "flaticon-plan", text: "Measurement submissions" },
