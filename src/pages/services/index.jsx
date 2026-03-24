@@ -2,6 +2,8 @@
 import React from "react";
 import AboutUs2 from "../../components/About-Us2";
 import Services2 from "../../components/Services2";
+import dynamic from "next/dynamic";
+const IntroWithVerticalTwo = dynamic(() => import("../../components/Intro-with-vertical-2"), { ssr: false });
 
 import IntroWithVerticalTwo from "../../components/Intro-with-vertical-2";
 import Process from "../../components/Process";

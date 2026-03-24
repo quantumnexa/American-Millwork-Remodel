@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import LightLayout from "../../layouts/light";
-import IntroWithVertical from "../../components/Intro-with-vertical-2";
+import dynamic from "next/dynamic";
+const IntroWithVertical = dynamic(() => import("../../components/Intro-with-vertical-2"), { ssr: false });
 import Testimonial1 from "../../components/Testimonials1";
 
 const TestimonialsPage = () => {
@@ -48,4 +49,3 @@ const TestimonialsPage = () => {
 };
 
 export default TestimonialsPage;
-
