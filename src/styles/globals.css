@@ -1048,6 +1048,49 @@ footer .footer-bottom .right a:hover {
   color: #111;
 }
 
+.works.filter-img .filter {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.works.filter-img .filter span {
+  margin: 0;
+  padding: 6px 10px;
+  color: #666;
+  transition: color .2s ease, background-color .2s ease;
+  border-radius: 6px;
+}
+.works.filter-img .filter span.active,
+.works.filter-img .filter span:hover {
+  color: #111;
+  background-color: #f3f3f3;
+}
+
+.works.filter-img .item .img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.works.filter-img .item .img {
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.works.filter-img .gallery .items {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .works.filter-img .item .img {
+    height: 320px;
+  }
+}
+
 .works.filter-img.bg-light-section .filtering span {
   color: #555;
 }
