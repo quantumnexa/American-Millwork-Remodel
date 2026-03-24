@@ -10,12 +10,9 @@ const IntroWithVerticalTwo = ({ customData }) => {
   return (
     <>
       <header className="slid-half">
-        <div
-          id="js-cta-slider"
-          className="cta__slider-wrapper nofull swiper-container"
-        >
-          <div className="swiper-wrapper cta__slider">
-            <div className="cta__slider-item swiper-slide swiper-slide-active swiper-slide-visible">
+        <div id="js-cta-slider" className="cta__slider-wrapper nofull">
+          <div className="cta__slider">
+            <div className="cta__slider-item">
               <div className="media-wrapper slide-inner valign">
                 <div
                   className="bg-img"
@@ -29,21 +26,21 @@ const IntroWithVerticalTwo = ({ customData }) => {
                         <span className="top-corn"></span>
                         <span className="bottom-corn"></span>
                         <div className="custom-font">
-                          <h5 className="thin custom-font text-highlight" style={{ color: '#B68C4A', letterSpacing: '4px', fontWeight: '500' }}>
+                          <h5 className="thin custom-font text-highlight" style={{ color: '#B68C4A', letterSpacing: '4px', fontWeight: '500', opacity: 1, transform: 'none', visibility: 'visible' }}>
                             {slide.title.first}
                           </h5>
                           <Split>
                             <h1
                               data-splitting
                               className="words chars splitting"
-                              style={{ whiteSpace: 'nowrap', fontSize: '55px' }}
+                              style={{ whiteSpace: 'nowrap', fontSize: '55px', opacity: 1, visibility: 'visible', transform: 'none' }}
                             >
                               <Link href="#">{slide.title.second}</Link>
                             </h1>
                           </Split>
                         </div>
                         {slide?.content && (
-                          <p className="mt-10">
+                          <p className="mt-10" style={{ opacity: 1, transform: 'none', visibility: 'visible' }}>
                             {slide.content.first} <br />
                             {slide.content.second}
                           </p>
@@ -75,7 +72,6 @@ const IntroWithVerticalTwo = ({ customData }) => {
               </div>
             </div>
           </div>
-          
         </div>
        
       </header>
