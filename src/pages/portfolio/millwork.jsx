@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import LightLayout from "../../layouts/light";
-import dynamic from "next/dynamic";
-const IntroWithVerticalTwo = dynamic(() => import("../../components/Intro-with-vertical-2"), { ssr: false });
+import IntroWithVerticalTwo from "../../components/Intro-with-vertical-2";
 import { WorkTwoColumn } from "../../components/Work-Two-Column";
 
 const MillworkGallery = () => {
@@ -32,3 +31,4 @@ const MillworkGallery = () => {
 };
 
 export default MillworkGallery;
+

@@ -1,14 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import dynamic from "next/dynamic";
+import IntroWithVerticalTwo from "../../components/Intro-with-vertical-2";
 import LightLayout from "../../layouts/light";
 import Services5Light from "../../components/Services5-Light";
 import AboutUs8 from "../../components/About-Us8";
 import Team1 from "../../components/Team1";
 import Services6 from "../../components/Services6";
 import NextProject from "../../components/Next-Project";
-const IntroWithVerticalTwo = dynamic(() => import("../../components/Intro-with-vertical-2"), { ssr: false });
-
 
 const About = () => {
   React.useEffect(() => {

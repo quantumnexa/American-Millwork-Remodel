@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import dynamic from "next/dynamic";
-const IntroWithVerticalTwo = dynamic(() => import("../../components/Intro-with-vertical-2"), { ssr: false });
+import IntroWithVerticalTwo from "../../components/Intro-with-vertical-2";
 import LightLayout from "../../layouts/light";
 import AboutUs8 from "../../components/About-Us8";
 import NextProject from "../../components/Next-Project";
