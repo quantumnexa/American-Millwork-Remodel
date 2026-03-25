@@ -493,6 +493,16 @@ body.hideX .pace {
   width: 100% !important;
 }
 
+/* Ensure inner page single hero text is visible without Swiper animations */
+.single-hero .cta__slider-item .caption h1,
+.single-hero .cta__slider-item .caption .thin,
+.single-hero .cta__slider-item .caption p,
+.single-hero .cta__slider-item .caption .btn-curve {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
 /* Process section: stack vertically on mobile */
 @media (max-width: 767px) {
   .process .row {
