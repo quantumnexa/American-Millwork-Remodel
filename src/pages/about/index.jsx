@@ -19,12 +19,12 @@ const About = () => {
           id: 1,
           title: {
             first: "ABOUT",
-            second: "OUR SERVICES"
+            second: "American Millwork & Remodel"
           },
           content: {
-            first: "We provide custom millwork, finish carpentry, kitchen and bathroom remodeling materials, flooring, and shop drawing support for commercial and residential projects."
+            first: "American Millwork & Remodel was created to solve two common problems in the market: clients struggle to find reliable custom finish solutions for commercial interiors, and many homeowners want fast pricing for kitchens and bathrooms without waiting through a slow traditional process."
           },
-          image: "/assets/img/new-images/hero-section/custom-interior-finish.png"
+          image: "/assets/img/new-images/hero-section/custom-kitchen-and-bath.png"
         }]}
       />
       {/* <PageHeader
