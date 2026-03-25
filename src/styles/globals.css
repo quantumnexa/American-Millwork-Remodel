@@ -491,6 +491,10 @@ body.hideX .pace {
 /* Ensure inner page single hero uses full-width image */
 .single-hero .cta__slider-item .media-wrapper .bg-img {
   width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  background-size: cover !important;
+  background-position: center center !important;
 }
 
 /* Ensure inner page single hero text is visible without Swiper animations */
