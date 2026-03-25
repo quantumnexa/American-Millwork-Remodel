@@ -19,7 +19,14 @@ const IntroWithVerticalTwo = ({ customData }) => {
               <div className="media-wrapper slide-inner valign">
                 <div
                   className="bg-img"
-                  style={{ backgroundImage: `url(${slide.image})` }}
+                  style={{
+                    backgroundImage: `url(${slide.image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center center',
+                    width: '100%',
+                    left: 0,
+                    right: 'auto',
+                  }}
                   data-overlay-dark="5"
                 ></div>
                 <div className="container">
