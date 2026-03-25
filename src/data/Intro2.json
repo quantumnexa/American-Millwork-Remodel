@@ -8,7 +8,7 @@
     "content": {
       "first": "From commercial millwork packages and franchise interior finishes to nationwide kitchen and bathroom remodeling materials, we help clients turn ideas into detailed scopes, quotes, shop drawings, and finished spaces. We serve restaurants, retail spaces, offices, lobbies, hospitality interiors, and homeowners looking for beautiful kitchens, bathrooms, flooring, and custom finish work. Clients can submit measurements, photos, videos, or live walkthroughs to receive pricing and guidance."
     },
-    "image": "assets/img/new-images/hero-section/custom-kitchen-and-bath.png"
+    "image": "/assets/img/new-images/hero-section/custom-kitchen-and-bath.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "content": {
       "first": "Custom commercial millwork for restaurants, retail stores, offices, and hospitality spaces including feature walls, reception desks, decorative paneling, ceilings, counters, shelving, and complete interior finish carpentry solutions."
     },
-     "image": "assets/img/new-images/hero-section/custom-interior-finish.png"
+     "image": "/assets/img/new-images/hero-section/custom-interior-finish.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "content": {
       "first": "Material packages and finish coordination for kitchen and bathroom remodeling including cabinets, countertops, vanities, flooring, tile, trim, and complete interior upgrades for modern, high-quality living spaces."
     },
-    "image": "assets/img/new-images/hero-section/residential.png"
+    "image": "/assets/img/new-images/hero-section/residential.png"
   },
   {
     "id": 4,
@@ -41,6 +41,6 @@
     "content": {
       "first": "Detailed shop drawings, scope planning, material estimates, and remote project support through photos, measurements, videos, and consultations to ensure accurate execution from concept to completion."
     },
-   "image": "assets/img/new-images/hero-section/design-shop.png"
+   "image": "/assets/img/new-images/hero-section/design-shop.png"
   }
 ]

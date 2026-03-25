@@ -9,7 +9,7 @@ const IntroWithVerticalTwo = ({ customData }) => {
 
   return (
     <>
-      <header className="slid-half">
+      <header className="slid-half single-hero">
         <div
           id="js-cta-slider"
           className="cta__slider-wrapper nofull swiper-container"

@@ -488,6 +488,11 @@ body.hideX .pace {
   }
 }
 
+/* Ensure inner page single hero uses full-width image */
+.single-hero .cta__slider-item .media-wrapper .bg-img {
+  width: 100% !important;
+}
+
 /* Process section: stack vertically on mobile */
 @media (max-width: 767px) {
   .process .row {
