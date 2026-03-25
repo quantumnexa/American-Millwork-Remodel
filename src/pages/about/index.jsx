@@ -14,7 +14,7 @@ const About = () => {
   }, []); 
   return (
     <LightLayout>
-      <IntroWithVerticalTwo 
+      <IntroWithVerticalTwo
         customData={[{
           id: 1,
           title: {
