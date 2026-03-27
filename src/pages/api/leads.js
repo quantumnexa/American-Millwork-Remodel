@@ -1,8 +1,11 @@
 import { Pool } from "pg";
 
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-});
+const connectionString =
+  process.env.DATABASE_URL ||
+  process.env.SUPABASE_DB_URL ||
+  process.env.POSTGRES_URL ||
+  process.env.POSTGRES_CONNECTION_STRING;
+const pool = connectionString ? new Pool({ connectionString }) : null;
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -11,12 +14,18 @@ export default async function handler(req, res) {
   }
 
   const orgId =
-    req.body?.org_id || process.env.ORG_ID || process.env.NEXT_PUBLIC_ORG_ID || "YOUR_ORG_ID";
+    req.body?.org_id ||
+    process.env.ORG_ID ||
+    process.env.YOUR_ORG_ID ||
+    process.env.NEXT_PUBLIC_ORG_ID ||
+    "YOUR_ORG_ID";
+  const rawWebsiteId =
+    req.body?.website_id ??
+    process.env.WEBSITE_ID ??
+    process.env.NEXT_PUBLIC_WEBSITE_ID ??
+    null;
   const websiteId =
-    req.body?.website_id ||
-    process.env.WEBSITE_ID ||
-    process.env.NEXT_PUBLIC_WEBSITE_ID ||
-    "YOUR_WEBSITE_ID";
+    rawWebsiteId === "" || rawWebsiteId === "NULL" ? null : rawWebsiteId;
   const name = req.body?.name || "";
   const email = req.body?.email || "";
   const phone = req.body?.phone || "";
@@ -25,10 +34,14 @@ export default async function handler(req, res) {
   const customObj = req.body?.custom || {};
 
   try {
-    if (!process.env.DATABASE_URL) {
+    if (!connectionString) {
       return res
         .status(500)
-        .json({ ok: false, error: "DATABASE_URL env is required on server" });
+        .json({
+          ok: false,
+          error:
+            "Database connection string is missing. Set DATABASE_URL (or SUPABASE_DB_URL / POSTGRES_URL) on the server.",
+        });
     }
 
     const text =

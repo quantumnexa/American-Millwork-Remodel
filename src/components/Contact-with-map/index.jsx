@@ -28,8 +28,8 @@ const ContactWithMap = () => {
     const phone = formData.get("phone");
     const service_type = formData.get("service_type");
     const message = formData.get("message");
-    const org_id = process.env.NEXT_PUBLIC_ORG_ID || "YOUR_ORG_ID";
-    const website_id = process.env.NEXT_PUBLIC_WEBSITE_ID || "YOUR_WEBSITE_ID";
+    const org_id = undefined;
+    const website_id = null;
     const params = new URLSearchParams(typeof window !== "undefined" ? window.location.search : "");
     const utm_source = params.get("utm_source") || null;
     const custom = {
@@ -43,8 +43,6 @@ const ContactWithMap = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          org_id,
-          website_id,
           name,
           email,
           phone,
@@ -75,7 +73,7 @@ const ContactWithMap = () => {
             <div className="messages">
               {status === "pending" && <p>Submitting...</p>}
               {status === "success" && <p>Thank you! We have received your request.</p>}
-              {status && status !== "pending" && status !== "success" && <p>Something went wrong.</p>}
+              {status && status !== "pending" && status !== "success" && <p>{status}</p>}
             </div>
 
             <div className="controls amr-contact-card wow fadeInUp" data-wow-delay=".2s">
