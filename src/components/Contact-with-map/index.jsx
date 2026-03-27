@@ -2,7 +2,6 @@ import React from "react";
 import appData from '../../data/app.json'
 
 const ContactWithMap = () => {
-<<<<<<< Updated upstream
   const [mainService, setMainService] = React.useState("");
   const residential = [
     "Kitchen Remodel",
@@ -20,7 +19,6 @@ const ContactWithMap = () => {
     "Countertops",
     "Design Consultation"
   ];
-=======
   const [status, setStatus] = React.useState(null);
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -66,7 +64,6 @@ const ContactWithMap = () => {
       setStatus("error");
     }
   };
->>>>>>> Stashed changes
   return (
     <div className="container-fluid">
       <div className="row">
@@ -74,17 +71,12 @@ const ContactWithMap = () => {
           <iframe src={appData.mapIframe}></iframe>
         </div>
         <div className="col-lg-6 form">
-<<<<<<< Updated upstream
-          <form id="contact-form" method="post" className="amr-form">
-            <div className="messages"></div>
-=======
-          <form id="contact-form" method="post" onSubmit={handleSubmit}>
+          <form id="contact-form" method="post" className="amr-form" onSubmit={handleSubmit}>
             <div className="messages">
               {status === "pending" && <p>Submitting...</p>}
               {status === "success" && <p>Thank you! We have received your request.</p>}
               {status && status !== "pending" && status !== "success" && <p>Something went wrong.</p>}
             </div>
->>>>>>> Stashed changes
 
             <div className="controls amr-contact-card wow fadeInUp" data-wow-delay=".2s">
               <div className="amr-form-header">
@@ -146,40 +138,35 @@ const ContactWithMap = () => {
               <div className="form-group">
                 <input
                   id="form_phone"
-<<<<<<< Updated upstream
                   type="tel"
                   name="phone"
                   placeholder="Phone (optional)"
                   className="amr-input"
-=======
-                  type="text"
-                  name="phone"
-                  placeholder="Phone"
-                  required="required"
->>>>>>> Stashed changes
                 />
               </div>
 
               <div className="form-group">
                 <input
-<<<<<<< Updated upstream
                   id="form_zip"
                   type="text"
                   name="zip"
                   placeholder="Project ZIP code (optional)"
                   className="amr-input"
-=======
+                />
+              </div>
+
+              <div className="form-group">
+                <input
                   id="form_service_type"
                   type="text"
                   name="service_type"
                   placeholder="Service Type"
                   required="required"
->>>>>>> Stashed changes
+                  className="amr-input"
                 />
               </div>
 
               <div className="form-group">
-<<<<<<< Updated upstream
                 <select id="form_timing" name="timing" defaultValue="" className="amr-select">
                   <option value="">Project timing</option>
                   <option value="Ready to start">Ready to start</option>
@@ -214,8 +201,6 @@ const ContactWithMap = () => {
               </div>
 
               <div className="form-group">
-=======
->>>>>>> Stashed changes
                 <textarea
                   id="form_message"
                   name="message"

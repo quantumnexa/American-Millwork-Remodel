@@ -31,7 +31,7 @@ const ContactInfo = () => {
               <div className="cont">
                 <h6 className="custom-font">Address</h6>
                 <p>
-                  7322 Southwest Freeway, Arena Tower One, Suite 140, Houston TX 77074
+                  7322 Southwest Freeway, Arena Tower One, Suite 140 Houston TX 77074
                 </p>
               </div>
             </div>

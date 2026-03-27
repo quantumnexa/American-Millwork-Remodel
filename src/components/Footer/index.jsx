@@ -95,7 +95,7 @@ const Footer = ({ classText }) => {
                 <li>
                   <div className="cont">
                     <h6>Official Address</h6>
-                    <p>7322 Southwest Freeway,<br /> Arena Tower One,<br /> Suite 140 Houston TX 77074</p>
+                    <p>7322 Southwest Freeway, Arena Tower One, Suite 140 Houston TX 77074</p>
                   </div>
                 </li>
                 <li>
