@@ -1,13 +1,4 @@
-import { Pool } from "pg";
-
-const connectionString =
-  process.env.NEXT_PUBLIC_SUPABASE_URL 
-const pool = connectionString
-  ? new Pool({
-      connectionString,
-      ssl: { rejectUnauthorized: false },
-    })
-  : null;
+import { createClient } from "@supabase/supabase-js";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -36,30 +27,38 @@ export default async function handler(req, res) {
   const customObj = req.body?.custom || {};
 
   try {
-    if (!connectionString) {
+    const supabaseUrl =
+      process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseKey =
+      process.env.SUPABASE_SERVICE_ROLE ||
+      process.env.SUPABASE_KEY ||
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+    if (!supabaseUrl || !supabaseKey) {
       return res
         .status(500)
         .json({
           ok: false,
           error:
-            "Database connection string is missing. Set DATABASE_URL (or SUPABASE_DB_URL / POSTGRES_URL) on the server.",
+            "Supabase environment is missing. Set SUPABASE_URL (or NEXT_PUBLIC_SUPABASE_URL) and SUPABASE_SERVICE_ROLE (or SUPABASE_KEY / NEXT_PUBLIC_SUPABASE_ANON_KEY) on the server.",
         });
     }
+    const supabase = createClient(supabaseUrl, supabaseKey);
 
-    const text =
-      "INSERT INTO public.leads (org_id, website_id, name, email, phone, service_type, source, custom) VALUES ($1,$2,$3,$4,$5,$6,$7,$8::jsonb) RETURNING id";
-    const values = [
-      orgId,
-      websiteId,
+    const payload = {
+      org_id: orgId,
+      website_id: websiteId,
       name,
       email,
       phone,
-      serviceType,
+      service_type: serviceType,
       source,
-      JSON.stringify(customObj || {}),
-    ];
-    const result = await pool.query(text, values);
-    return res.status(200).json({ ok: true, id: result.rows[0]?.id });
+      custom: customObj || {},
+    };
+    const { data, error } = await supabase.from("leads").insert(payload).select("id").single();
+    if (error) {
+      return res.status(500).json({ ok: false, error: error.message });
+    }
+    return res.status(200).json({ ok: true, id: data?.id });
   } catch (err) {
     return res.status(500).json({ ok: false, error: err.message });
   }
