@@ -1,11 +1,13 @@
 import { Pool } from "pg";
 
 const connectionString =
-  process.env.DATABASE_URL ||
-  process.env.SUPABASE_DB_URL ||
-  process.env.POSTGRES_URL ||
-  process.env.POSTGRES_CONNECTION_STRING;
-const pool = connectionString ? new Pool({ connectionString }) : null;
+  process.env.NEXT_PUBLIC_SUPABASE_URL 
+const pool = connectionString
+  ? new Pool({
+      connectionString,
+      ssl: { rejectUnauthorized: false },
+    })
+  : null;
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
