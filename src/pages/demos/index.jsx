@@ -334,7 +334,7 @@ const Demos = () => {
                       <span className="icon pe-7s-map-marker"></span>
                       <div className="cont">
                         <h6>Officeal Address</h6>
-                        <p>504 White St . Dawsonville, GA 30534 , New York</p>
+                        <p>7322 Southwest Freeway, Arena Tower One, Suite 140 Houston TX 77074</p>
                       </div>
                     </li>
                     <li>
