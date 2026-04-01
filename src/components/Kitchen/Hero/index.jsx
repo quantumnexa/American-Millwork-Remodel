@@ -231,36 +231,51 @@ const KitchenHero = () => {
           color: #fff;
         }
         @media (max-width: 991px) {
-          .caption { padding-top: 0; margin-top: 40px; }
+          .caption { padding-top: 0; margin-top: 20px; }
           .hero-row {
             grid-template-columns: 1fr;
-            gap: 30px;
+            gap: 20px;
           }
           .row-2 {
             grid-template-columns: 1fr;
             gap: 12px;
           }
           .hero-col h1 {
-            font-size: 38px !important;
+            font-size: 34px !important;
+            margin-bottom: 10px;
           }
           .hero-form {
             padding: 20px;
+            margin-top: 10px;
           }
           .form-title {
             font-size: 20px;
+            margin-bottom: 15px;
           }
           .slide-inner {
-            min-height: auto;
-            padding: 100px 0 60px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 0 60px;
+          }
+          .hf-input, .hf-select, .hf-textarea {
+            padding: 10px 12px;
+            height: 44px;
+          }
+          .hf-textarea {
+            min-height: 80px;
           }
         }
         @media (max-width: 767px) {
           .hero-col h1 {
-            font-size: 32px !important;
+            font-size: 28px !important;
           }
           .hero-col h5 {
-            font-size: 14px !important;
+            font-size: 13px !important;
             letter-spacing: 2px !important;
+          }
+          .slide-inner {
+            padding: 100px 0 40px;
           }
         }
         @media (max-width: 1199px) and (min-width: 992px) {
