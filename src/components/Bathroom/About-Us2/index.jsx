@@ -35,12 +35,12 @@ const BathroomAboutUs2 = () => {
                 </div>
                 <div className="col-md-8 wow fadeInUp" data-wow-delay=".3s">
                   <div className="img mb-20 wow imago">
-                    <img src={aboutUs2Data.image1} alt="" />
+                    <img src={aboutUs2Data.image1} alt="" loading="lazy" />
                   </div>
                 </div>
                 <div className="col-md-7 wow fadeInUp" data-wow-delay=".3s">
                   <div className="img wow imago">
-                    <img src={aboutUs2Data.image2} alt="" />
+                    <img src={aboutUs2Data.image2} alt="" loading="lazy" />
                   </div>
                 </div>
                 <div className="col-md-5">

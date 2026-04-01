@@ -49,12 +49,12 @@ const AboutUs8 = (props) => {
               <div className="row">
                 <div className="col-md-6">
                   <div className="img mb-30">
-                    <img src={(props.image1 || "/assets/img/new/7.png")} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
+                    <img src={(props.image1 || "/assets/img/new/7.png")} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} loading="lazy" />
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="img mb-30" style={{ marginTop: '50px' }}>
-                    <img src={(props.image2 || "/assets/img/new/8.png")} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
+                    <img src={(props.image2 || "/assets/img/new/8.png")} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} loading="lazy" />
                   </div>
                 </div>
               </div>

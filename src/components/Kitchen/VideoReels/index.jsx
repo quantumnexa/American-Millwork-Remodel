@@ -110,13 +110,17 @@ const KitchenVideoReels = () => {
               >
                 {videos.map((video) => (
                   <SwiperSlide key={video.id} style={{ overflow: 'visible' }}>
-                    <div className="reel-item">
+                    <div 
+                      className="reel-item"
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
+                    >
                       <div className="video-wrapper">
                         <video 
-                          autoPlay
                           loop 
                           muted 
                           playsInline 
+                          preload="metadata"
                           poster={video.poster}
                           className="reel-video"
                           controls
@@ -124,7 +128,6 @@ const KitchenVideoReels = () => {
                           <source src={video.url} type="video/mp4" />
                         </video>
                       </div>
-                     
                     </div>
                   </SwiperSlide>
                 ))}

@@ -43,7 +43,7 @@ const BathroomBrands = () => {
             <SwiperSlide key={idx} style={{ overflow: 'visible' }}>
               <div className="item text-center">
                 <div className="img-container">
-                  <img src={src} alt={`brand-${(idx % 12) + 1}`} />
+                  <img src={src} alt={`brand-${(idx % 12) + 1}`} loading="lazy" />
                 </div>
               </div>
             </SwiperSlide>
