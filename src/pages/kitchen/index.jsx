@@ -41,10 +41,10 @@ const Kitchen = () => {
         <Process />
       </div>
       <NextProject
-        title="START YOUR PROJECT TODAY"
-        text="Whether you need a restaurant millwork package, a lobby feature wall, or a kitchen and bath material quote, send your project and our team will guide you to the next step."
-        btn1Text="Submit Project"
-        btn2Text="Get Online Quote"
+        title="START YOUR KITCHEN TRANSFORMATION"
+        text="Ready to design your dream kitchen? Whether you need a custom cabinetry package or a complete remodel quote, send us your project details and our experts will guide you through the process."
+        btn1Text="Get My Quote"
+        btn2Text="Contact Our Designers"
       />
     </LightLayout>
   );
