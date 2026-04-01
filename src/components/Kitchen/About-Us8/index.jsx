@@ -63,6 +63,10 @@ const AboutUs8 = (props) => {
         </div>
       </div>
       <style jsx>{`
+        .about-us-8 {
+          padding-top: 120px;
+          padding-bottom: 120px;
+        }
         .sub-title {
           display: inline-block;
           padding: 0 35px !important;

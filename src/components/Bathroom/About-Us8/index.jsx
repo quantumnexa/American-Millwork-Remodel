@@ -49,12 +49,12 @@ const BathroomAboutUs8 = (props) => {
               <div className="row">
                 <div className="col-md-6">
                   <div className="img mb-30">
-                    <img src={(props.image1 || "/assets/img/new/7.png")} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
+                    <img src={(props.image1 || "/assets/img/new/9.png")} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="img mb-30" style={{ marginTop: '50px' }}>
-                    <img src={(props.image2 || "/assets/img/new/8.png")} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
+                    <img src={(props.image2 || "/assets/img/new/10.png")} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
                   </div>
                 </div>
               </div>
@@ -63,6 +63,10 @@ const BathroomAboutUs8 = (props) => {
         </div>
       </div>
       <style jsx>{`
+        .about-us-8 {
+          padding-top: 120px;
+          padding-bottom: 120px;
+        }
         .sub-title {
           display: inline-block;
           padding: 0 35px !important;

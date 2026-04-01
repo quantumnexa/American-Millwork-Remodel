@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const BathroomAboutUs2 = () => {
   return (
-    <section className="about">
+    <section className="about section-padding">
       <div className="container-fluid padding5">
         <div className="row">
           <div className="col-lg-6 valign">
