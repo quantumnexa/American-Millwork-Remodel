@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import appData from "../data/app.json";
 
-const LightLayout = ({ children, footerClass, isKitchen }) => {
+const LightLayout = ({ children, footerClass, isKitchen, isBathroom }) => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
 
@@ -32,7 +32,7 @@ const LightLayout = ({ children, footerClass, isKitchen }) => {
       <Head>
         <link rel="stylesheet" href="/assets/css/style-light.css" />
       </Head>
-      <Navbar navbarRef={navbarRef} logoRef={logoRef} isKitchen={isKitchen} />
+      <Navbar navbarRef={navbarRef} logoRef={logoRef} isKitchen={isKitchen} isBathroom={isBathroom} />
       {children}
       <Footer classText={footerClass} />
     </>
