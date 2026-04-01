@@ -71,6 +71,29 @@ const KitchenBrands = () => {
          .sub-title:after {
            right: 0;
          }
+         @media screen and (max-width: 991px) {
+           .brands {
+             padding: 60px 0;
+           }
+           h2 {
+             font-size: 28px !important;
+           }
+           .item .img {
+             padding: 10px !important;
+           }
+           .item .img img {
+             height: 40px !important;
+           }
+         }
+         @media screen and (max-width: 767px) {
+            .sub-title {
+              font-size: 12px !important;
+              padding: 0 25px !important;
+            }
+            .sub-title:before, .sub-title:after {
+              width: 15px;
+            }
+         }
        `}</style>
     </section>
   );

@@ -84,6 +84,40 @@ const AboutUs8 = (props) => {
         .sub-title:after {
           right: 0;
         }
+        @media screen and (max-width: 991px) {
+          .about-us-8 {
+            padding: 60px 0;
+          }
+          .content-side {
+            padding-right: 0 !important;
+            margin-top: 40px;
+          }
+          .exp-content h2 {
+            font-size: 32px !important;
+          }
+          .img-collage {
+            margin-bottom: 40px;
+          }
+          .img-collage .img {
+            margin-top: 0 !important;
+            height: 300px !important;
+          }
+          .img-collage .img img {
+            height: 300px !important;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          .exp-content h2 {
+            font-size: 28px !important;
+          }
+          .sub-title {
+            font-size: 12px !important;
+            padding: 0 25px !important;
+          }
+          .sub-title:before, .sub-title:after {
+            width: 15px;
+          }
+        }
       `}</style>
     </section>
   );

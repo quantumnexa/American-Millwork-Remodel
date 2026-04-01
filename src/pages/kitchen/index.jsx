@@ -17,15 +17,19 @@ const Kitchen = () => {
     document.querySelector("body").classList.add("homepage");
   }, []);
   return (
-    <LightLayout>
-      <KitchenHero />
+    <LightLayout isKitchen={true}>
+      <section id="home">
+        <KitchenHero />
+      </section>
       <KitchenBrands />
-      <KitchenVideoReels />
-      <div className="bg-white">
+      <section id="reels">
+        <KitchenVideoReels />
+      </section>
+      <div id="about" className="bg-white">
         <AboutUs2 />
         {/* <Services3 /> */}
       </div>
-      <div className="bg-gray">
+      <div id="why-us" className="bg-gray">
         <AboutUs8 />
       </div>
       {/* <div className="bg-gray">
@@ -37,15 +41,17 @@ const Kitchen = () => {
       <div className="bg-gray">
         <Skills2 />
       </div> */}
-      <div className="bg-white">
+      <div id="process" className="bg-white">
         <Process />
       </div>
-      <NextProject
-        title="START YOUR KITCHEN TRANSFORMATION"
-        text="Ready to design your dream kitchen? Whether you need a custom cabinetry package or a complete remodel quote, send us your project details and our experts will guide you through the process."
-        btn1Text="Get My Quote"
-        btn2Text="Contact Our Designers"
-      />
+      <section id="contact">
+        <NextProject
+          title="START YOUR KITCHEN TRANSFORMATION"
+          text="Ready to design your dream kitchen? Whether you need a custom cabinetry package or a complete remodel quote, send us your project details and our experts will guide you through the process."
+          btn1Text="Get My Quote"
+          btn2Text="Contact Our Designers"
+        />
+      </section>
     </LightLayout>
   );
 };

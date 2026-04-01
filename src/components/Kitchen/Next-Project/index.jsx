@@ -76,6 +76,35 @@ const NextProject = ({
         .sub-title:after {
           right: 0;
         }
+        @media screen and (max-width: 991px) {
+          .call-action {
+            padding: 80px 0;
+          }
+          .content h2 {
+            font-size: 24px !important;
+          }
+          .buttons-row {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px !important;
+          }
+          .btn-curve {
+            width: 100%;
+            max-width: 300px;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          .content h2 {
+            font-size: 20px !important;
+          }
+          .sub-title {
+            font-size: 12px !important;
+            padding: 0 25px !important;
+          }
+          .sub-title:before, .sub-title:after {
+            width: 15px;
+          }
+        }
       `}</style>
     </section>
   );

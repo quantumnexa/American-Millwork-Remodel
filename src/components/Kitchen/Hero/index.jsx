@@ -9,8 +9,6 @@ const KitchenHero = () => {
     const name = formData.get("name");
     const email = formData.get("email");
     const phone = formData.get("phone");
-    const service_type = formData.get("service_type");
-    const hear = formData.get("hear");
     const message = formData.get("message");
     const params = new URLSearchParams(typeof window !== "undefined" ? window.location.search : "");
     const utm_source = params.get("utm_source") || null;
@@ -78,34 +76,8 @@ const KitchenHero = () => {
                             <input className="hf-input" name="name" type="text" placeholder="Name" required />
                             <input className="hf-input" name="phone" type="tel" placeholder="Phone" required />
                           </div>
-                          <div className="row-2">
-                            <input className="hf-input" name="email" type="email" placeholder="Email" required />
-                            <div className="select-wrap">
-                              <select className="hf-select" name="service_type" required defaultValue="">
-                                <option value="" disabled>
-                                  Service Type
-                                </option>
-                                <option value="Kitchens">Kitchens</option>
-                                <option value="Bathrooms">Bathrooms</option>
-                                <option value="Flooring">Flooring</option>
-                                <option value="Millwork">Millwork</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div className="row-2">
-                            <div className="select-wrap">
-                              <select className="hf-select" name="hear" defaultValue="">
-                                <option value="" disabled>
-                                  How did you hear about us?
-                                </option>
-                                <option value="Google">Google</option>
-                                <option value="Facebook">Facebook</option>
-                                <option value="Instagram">Instagram</option>
-                                <option value="Referral">Referral</option>
-                              </select>
-                            </div>
-                            <div></div>
-                          </div>
+                          
+                         
                           <textarea className="hf-textarea" name="message" rows="3" placeholder="Project Description" required />
                           <button className="btn-curve btn-color hf-btn" type="submit" disabled={status === "pending"}>
                             <span>{status === "pending" ? "Submitting..." : "Get A Quote"}</span>
@@ -259,12 +231,36 @@ const KitchenHero = () => {
           color: #fff;
         }
         @media (max-width: 991px) {
-          .caption { padding-top: 0; }
+          .caption { padding-top: 0; margin-top: 40px; }
           .hero-row {
             grid-template-columns: 1fr;
+            gap: 30px;
           }
           .row-2 {
             grid-template-columns: 1fr;
+            gap: 12px;
+          }
+          .hero-col h1 {
+            font-size: 38px !important;
+          }
+          .hero-form {
+            padding: 20px;
+          }
+          .form-title {
+            font-size: 20px;
+          }
+          .slide-inner {
+            min-height: auto;
+            padding: 100px 0 60px;
+          }
+        }
+        @media (max-width: 767px) {
+          .hero-col h1 {
+            font-size: 32px !important;
+          }
+          .hero-col h5 {
+            font-size: 14px !important;
+            letter-spacing: 2px !important;
           }
         }
         @media (max-width: 1199px) and (min-width: 992px) {

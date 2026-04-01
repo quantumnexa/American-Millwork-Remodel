@@ -13,33 +13,31 @@ const KitchenVideoReels = () => {
   const videos = [
     {
       id: 1,
-      url: "https://www.w3schools.com/html/mov_bbb.mp4",
+      url: "/assets/img/videos/1.mp4",
       poster: "/assets/img/portfolio/1.jpg",
-      title: "Modern Kitchen Design"
+      
     },
     {
       id: 2,
-      url: "https://www.w3schools.com/html/movie.mp4",
+      url: "/assets/img/videos/2.mp4",
       poster: "/assets/img/portfolio/2.jpg",
-      title: "Elegant Cabinetry"
+      
     },
     {
       id: 3,
-      url: "https://www.w3schools.com/html/mov_bbb.mp4",
+      url: "/assets/img/videos/3.mp4",
       poster: "/assets/img/portfolio/3.jpg",
-      title: "Smart Lighting Solutions"
     },
     {
       id: 4,
-      url: "https://www.w3schools.com/html/movie.mp4",
+      url: "/assets/img/videos/4.mp4",
       poster: "/assets/img/portfolio/4.jpg",
-      title: "Custom Island Features"
+      
     },
     {
       id: 5,
-      url: "https://www.w3schools.com/html/mov_bbb.mp4",
+      url: "/assets/img/videos/5.mp4",
       poster: "/assets/img/portfolio/5.jpg",
-      title: "Premium Countertops"
     }
   ];
 
@@ -104,9 +102,9 @@ const KitchenVideoReels = () => {
                   bulletActiveClass: 'swiper-pagination-bullet-active'
                 }}
                 breakpoints={{
-                  480: { slidesPerView: 1.5, spaceBetween: 20 },
-                  768: { slidesPerView: 2.2, spaceBetween: 30 },
-                  1200: { slidesPerView: 3.2, spaceBetween: 40 },
+                  480: { slidesPerView: 1.2, spaceBetween: 10 },
+                  768: { slidesPerView: 1.8, spaceBetween: 20 },
+                  1200: { slidesPerView: 2.2, spaceBetween: 30 },
                 }}
               >
                 {videos.map((video) => (
@@ -114,6 +112,7 @@ const KitchenVideoReels = () => {
                     <div className="reel-item">
                       <div className="video-wrapper">
                         <video 
+                          autoPlay
                           loop 
                           muted 
                           playsInline 
@@ -123,10 +122,8 @@ const KitchenVideoReels = () => {
                         >
                           <source src={video.url} type="video/mp4" />
                         </video>
-                        <div className="reel-content-overlay">
-                          <h5 className="playfont text-white">{video.title}</h5>
-                        </div>
                       </div>
+                     
                     </div>
                   </SwiperSlide>
                 ))}
@@ -182,6 +179,8 @@ const KitchenVideoReels = () => {
         .video-wrapper {
           position: relative;
           width: 100%;
+          max-width: 350px;
+          margin: 0 auto;
           aspect-ratio: 9 / 16;
           border-radius: 12px;
           overflow: hidden;
@@ -198,21 +197,12 @@ const KitchenVideoReels = () => {
           height: 100%;
           object-fit: cover;
         }
-        .reel-content-overlay {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          padding: 40px 15px 15px;
-          background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
-          pointer-events: none;
-        }
-        .reel-content-overlay h5 {
+        .reel-info h5 {
           font-size: 18px;
           font-weight: 500;
           letter-spacing: 0.5px;
           font-family: 'Playfair Display', serif;
-          text-align: center;
+          color: #111;
         }
         .swiper-button-next-custom,
         .swiper-button-prev-custom {
@@ -251,12 +241,32 @@ const KitchenVideoReels = () => {
           transform: scale(1.3);
         }
         @media screen and (max-width: 991px) {
+          .video-reels {
+            padding: 80px 0;
+          }
+          .section-head h2 {
+            font-size: 32px !important;
+          }
           .reels-slider-wrapper {
             padding-left: 0;
-            margin-top: 50px;
+            margin-top: 40px;
           }
           .reels-nav-custom {
             display: none !important;
+          }
+          .video-wrapper {
+            max-width: 280px;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          .video-reels {
+            padding: 60px 0;
+          }
+          .section-head h2 {
+            font-size: 28px !important;
+          }
+          .section-head p {
+            margin-bottom: 20px;
           }
         }
       `}</style>

@@ -5,10 +5,29 @@ import appData from "../../data/app.json";
 import getSiblings from '../../common/getSiblings'
 import { useRouter } from "next/router";
 
-const Navbar = ({ navbarRef, logoRef, logoClass }) => {
+const Navbar = ({ navbarRef, logoRef, logoClass, isKitchen }) => {
   const router = useRouter();
   const isActive = (path) => router.pathname === path;
   const isServicesActive = () => router.pathname.startsWith("/services");
+  
+  const handleScroll = (e, targetId) => {
+     if (isKitchen) {
+       e.preventDefault();
+       const element = document.getElementById(targetId);
+       if (element) {
+         window.scrollTo({
+           top: element.offsetTop - 80, // Adjust for navbar height
+           behavior: "smooth",
+         });
+       }
+       // Close mobile menu if open
+       const navbarCollapse = document.getElementById("navbarSupportedContent");
+       if (navbarCollapse.classList.contains("show-with-trans")) {
+         navbarCollapse.classList.remove("show-with-trans");
+       }
+     }
+   };
+
   const handleDropdown = (e) => {
     getSiblings(e.target.parentElement)
       .filter((item) => item.classList.contains("show"))
@@ -60,49 +79,104 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link href="/">
-                  <a className={`nav-link ${isActive("/") ? "active" : ""}`}>Home</a>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="/about">
-                  <a className={`nav-link ${isActive("/about") ? "active" : ""}`}>About</a>
-                </Link>
-              </li>
-              <li className="nav-item dropdown">
-                <Link href="/services">
-                  <a
-                    className={`nav-link dropdown-toggle ${isServicesActive() ? "active" : ""}`}
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
+                <Link href={isKitchen ? "#home" : "/"}>
+                  <a 
+                    className={`nav-link ${isActive("/") ? "active" : ""}`}
+                    onClick={(e) => handleScroll(e, "home")}
                   >
-                    Services
+                    Home
                   </a>
                 </Link>
-                <div className="dropdown-menu">
-                  <Link href="/services1">
-                    <a className={`dropdown-item ${isActive("/services1") ? "active" : ""}`}>Commercial Millwork & Interiors</a>
-                  </Link>
-                  <Link href="/services2">
-                    <a className={`dropdown-item ${isActive("/services2") ? "active" : ""}`}>Residential Remodeling Materials</a>
-                  </Link>
-                  <Link href="/services3">
-                    <a className={`dropdown-item ${isActive("/services3") ? "active" : ""}`}>Technical & Design Support</a>
-                  </Link>
-                </div>
               </li>
+              {isKitchen && (
+                <li className="nav-item">
+                  <Link href="#reels">
+                    <a className="nav-link" onClick={(e) => handleScroll(e, "reels")}>Our Projects</a>
+                  </Link>
+                </li>
+              )}
+              <li className="nav-item">
+                <Link href={isKitchen ? "#about" : "/about"}>
+                  <a 
+                    className={`nav-link ${isActive("/about") ? "active" : ""}`}
+                    onClick={(e) => handleScroll(e, "about")}
+                  >
+                    About
+                  </a>
+                </Link>
+              </li>
+              {isKitchen ? (
+                <>
+                  <li className="nav-item">
+                    <Link href="#why-us">
+                      <a className="nav-link" onClick={(e) => handleScroll(e, "why-us")}>Why Us</a>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link href="#process">
+                      <a className="nav-link" onClick={(e) => handleScroll(e, "process")}>Process</a>
+                    </Link>
+                  </li>
+                </>
+              ) : (
+                <li className="nav-item dropdown">
+                  <Link href="/services">
+                    <a
+                      className={`nav-link dropdown-toggle ${isServicesActive() ? "active" : ""}`}
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Services
+                    </a>
+                  </Link>
+                  <div className="dropdown-menu">
+                    <Link href="/services1">
+                      <a className={`dropdown-item ${isActive("/services1") ? "active" : ""}`}>Commercial Millwork & Interiors</a>
+                    </Link>
+                    <Link href="/services2">
+                      <a className={`dropdown-item ${isActive("/services2") ? "active" : ""}`}>Residential Remodeling Materials</a>
+                    </Link>
+                    <Link href="/services3">
+                      <a className={`dropdown-item ${isActive("/services3") ? "active" : ""}`}>Technical & Design Support</a>
+                    </Link>
+                  </div>
+                </li>
+              )}
 
               <li className="nav-item">
-                <Link href="/contact">
-                  <a className={`nav-link ${isActive("/contact") ? "active" : ""}`}>Contact</a>
+                <Link href={isKitchen ? "#contact" : "/contact"}>
+                  <a 
+                    className={`nav-link ${isActive("/contact") ? "active" : ""}`}
+                    onClick={(e) => handleScroll(e, "contact")}
+                  >
+                    Contact
+                  </a>
                 </Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <style jsx>{`
+        @media screen and (max-width: 991px) {
+          .navbar-collapse {
+            background: #fff;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+          }
+          :global(.show-with-trans) {
+            max-height: 500px !important;
+          }
+          .nav-link {
+            color: #111 !important;
+            padding: 15px 20px !important;
+            border-bottom: 1px solid #eee;
+          }
+        }
+      `}</style>
     </>
   );
 };

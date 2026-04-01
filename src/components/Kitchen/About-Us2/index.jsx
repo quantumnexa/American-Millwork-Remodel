@@ -81,6 +81,29 @@ const AboutUs2 = () => {
         .sub-title:after {
           right: 0;
         }
+        @media screen and (max-width: 991px) {
+          .about {
+            padding: 60px 0;
+          }
+          .exp-content h2 {
+            font-size: 32px !important;
+          }
+          .ab-exp {
+            margin-top: 40px;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          .exp-content h2 {
+            font-size: 28px !important;
+          }
+          .sub-title {
+            font-size: 12px !important;
+            padding: 0 25px !important;
+          }
+          .sub-title:before, .sub-title:after {
+            width: 15px;
+          }
+        }
       `}</style>
     </section>
   );

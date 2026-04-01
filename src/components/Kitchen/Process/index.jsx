@@ -134,6 +134,33 @@ const Process = () => {
         .sub-title:after {
           right: 0;
         }
+        @media screen and (max-width: 991px) {
+          .process {
+            padding: 60px 0;
+          }
+          .section-head h4 {
+            font-size: 24px !important;
+          }
+          .coulmn {
+            margin-bottom: 40px;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          .section-head h4 {
+            font-size: 20px !important;
+          }
+          .sub-title {
+            font-size: 12px !important;
+            padding: 0 25px !important;
+          }
+          .sub-title:before, .sub-title:after {
+            width: 15px;
+          }
+          .item div[style*="width: 150px"] {
+            width: 120px !important;
+            height: 120px !important;
+          }
+        }
       `}</style>
     </section>
   );
