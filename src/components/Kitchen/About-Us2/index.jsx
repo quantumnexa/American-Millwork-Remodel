@@ -1,0 +1,89 @@
+/* eslint-disable @next/next/no-img-element */
+import React from "react";
+import aboutUs2Data from "../../../data/about-us2.json";
+import Link from 'next/link'
+
+const AboutUs2 = () => {
+  return (
+    <section className="about">
+      <div className="container-fluid padding5">
+        <div className="row">
+          <div className="col-lg-6 valign">
+            <div
+              className="exp-content nopat wow fadeInUp"
+              data-wow-delay=".3s"
+            >
+              <h6 className="sub-title main-color mb-10 ls10" style={{ color: '#B68C4A' }}>ABOUT US</h6>
+              <h2 className="mb-20 playfont">
+                Premium <span className="text-highlight">Kitchen Remodeling</span> and <span className="text-highlight">Custom Cabinetry</span>
+              </h2>
+              <p>
+                We specialize in complete kitchen transformations, combining high-end material supply with expert project coordination. Whether you are looking for modern minimalist designs or traditional luxury finishes, our system simplifies the remodeling process from initial measurements to final installation.
+              </p>
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="ab-exp">
+              <div className="row">
+                <div className="col-md-4 mb-20">
+                  <div
+                    className="pattern bg-img bg-repeat"
+                    style={{
+                      backgroundImage: `url(/assets/img/line-pattern.png)`,
+                    }}
+                  ></div>
+                </div>
+                <div className="col-md-8 wow fadeInUp" data-wow-delay=".3s">
+                  <div className="img mb-20 wow imago">
+                    <img src={aboutUs2Data.image1} alt="" />
+                  </div>
+                </div>
+                <div className="col-md-7 wow fadeInUp" data-wow-delay=".3s">
+                  <div className="img wow imago">
+                    <img src={aboutUs2Data.image2} alt="" />
+                  </div>
+                </div>
+                <div className="col-md-5">
+                  <div className="years-exp">
+                    <div className="exp-text">
+                      <h2 className="custom-font">{aboutUs2Data.exp}</h2>
+                      <h6>Years Of Experience</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style jsx>{`
+        .sub-title {
+          display: inline-block;
+          padding: 0 35px !important;
+          position: relative;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+        .sub-title:before,
+        .sub-title:after {
+          content: "";
+          width: 25px;
+          height: 1px;
+          background: #B68C4A;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .sub-title:before {
+          left: 0;
+        }
+        .sub-title:after {
+          right: 0;
+        }
+      `}</style>
+    </section>
+  );
+};
+
+export default AboutUs2;

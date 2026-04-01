@@ -63,6 +63,7 @@ const ContactWithMap = () => {
     }
   };
   return (
+    <>
     <div className="container-fluid">
       <div className="row">
         <div className="col-lg-6 map-box">
@@ -83,18 +84,20 @@ const ContactWithMap = () => {
               </div>
 
               <div className="form-group">
-                <select
-                  id="form_main_service"
-                  name="main_service"
-                  value={mainService}
-                  onChange={(e) => setMainService(e.target.value)}
-                  required
-                  className="amr-select"
-                >
-                  <option value="">Select Service Type</option>
-                  <option value="Residential">Residential</option>
-                  <option value="Commercial">Commercial</option>
-                </select>
+                <div className="amr-select-wrap">
+                  <select
+                    id="form_main_service"
+                    name="main_service"
+                    value={mainService}
+                    onChange={(e) => setMainService(e.target.value)}
+                    required
+                    className="amr-select"
+                  >
+                    <option value="">Select Service Type</option>
+                    <option value="Residential">Residential</option>
+                    <option value="Commercial">Commercial</option>
+                  </select>
+                </div>
               </div>
 
               {mainService && (
@@ -153,37 +156,29 @@ const ContactWithMap = () => {
                 />
               </div>
 
+             
+
               <div className="form-group">
+                <div className="amr-select-wrap">
+                  <select id="form_timing" name="timing" defaultValue="" className="amr-select">
+                    <option value="">Project timing</option>
+                    <option value="Ready to start">Ready to start</option>
+                    <option value="1–3 months">1–3 months</option>
+                    <option value="3–6 months">3–6 months</option>
+                    <option value="Just exploring">Just exploring</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="form-group">
+                <div className="amr-group-title">Estimated budget</div>
                 <input
-                  id="form_service_type"
+                  id="form_budget"
                   type="text"
-                  name="service_type"
-                  placeholder="Service Type"
-                  required="required"
+                  name="budget"
+                  placeholder="Estimated budget"
                   className="amr-input"
                 />
-              </div>
-
-              <div className="form-group">
-                <select id="form_timing" name="timing" defaultValue="" className="amr-select">
-                  <option value="">Project timing</option>
-                  <option value="Ready to start">Ready to start</option>
-                  <option value="1–3 months">1–3 months</option>
-                  <option value="3–6 months">3–6 months</option>
-                  <option value="Just exploring">Just exploring</option>
-                </select>
-              </div>
-
-              <div className="form-group">
-                <select id="form_budget" name="budget" defaultValue="" className="amr-select">
-                  <option value="">Estimated budget</option>
-                  <option value="Under $5k">Under $5k</option>
-                  <option value="$5k–$15k">$5k–$15k</option>
-                  <option value="$15k–$30k">$15k–$30k</option>
-                  <option value="$30k–$60k">$30k–$60k</option>
-                  <option value="$60k+">$60k+</option>
-                  <option value="Not sure">Not sure</option>
-                </select>
               </div>
 
               <div className="form-group">
@@ -217,6 +212,40 @@ const ContactWithMap = () => {
         </div>
       </div>
     </div>
+    <style jsx>{`
+      .amr-select-wrap {
+        position: relative;
+      }
+      .amr-select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-right: 48px;
+        cursor: pointer;
+        background: transparent;
+      }
+      .amr-select-wrap:after {
+        content: "";
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 8px solid #B68C4A;
+        pointer-events: none;
+      }
+      .amr-select::-ms-expand {
+        display: none;
+      }
+      .amr-select:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(182,140,74,0.35);
+      }
+    `}</style>
+    </>
   );
 };
 
