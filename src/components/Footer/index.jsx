@@ -176,15 +176,20 @@ const Footer = ({ classText }) => {
           color: #333;
         }
         @media screen and (max-width: 991px) {
-           footer {
-             padding: 60px 0 30px;
-           }
-           .footer-col {
-             width: 100% !important;
-             max-width: 100% !important;
-             flex: 0 0 100% !important;
-             margin-bottom: 40px !important;
-           }
+            footer {
+              padding: 60px 0 30px;
+            }
+            .logo img {
+              max-width: 100% !important;
+              width: 100% !important;
+              height: auto !important;
+            }
+            .footer-col {
+              width: 100% !important;
+              max-width: 100% !important;
+              flex: 0 0 100% !important;
+              margin-bottom: 40px !important;
+            }
            .text-right-md {
              text-align: left !important;
              margin-top: 15px;
