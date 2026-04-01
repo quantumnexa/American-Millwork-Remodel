@@ -37,12 +37,13 @@ const KitchenBrands = () => {
             992: { slidesPerView: 5, spaceBetween: 32 },
             1200: { slidesPerView: 6, spaceBetween: 36 },
           }}
+          style={{ padding: "30px 10px" }}
         >
           {logos.concat(logos).map((src, idx) => (
-            <SwiperSlide key={idx}>
+            <SwiperSlide key={idx} style={{ overflow: 'visible' }}>
               <div className="item text-center">
-                <div className="img" style={{ padding: "16px", borderRadius: "10px", background: "#fff", boxShadow: "0 6px 18px rgba(0,0,0,0.06)" }}>
-                  <img src={src} alt={`brand-${(idx % 12) + 1}`} style={{ maxWidth: "100%", height: "56px", objectFit: "contain", filter: "grayscale(0.2)" }} />
+                <div className="img-container">
+                  <img src={src} alt={`brand-${(idx % 12) + 1}`} />
                 </div>
               </div>
             </SwiperSlide>
@@ -50,6 +51,31 @@ const KitchenBrands = () => {
         </Swiper>
       </div>
       <style jsx>{`
+         .brands-slider {
+            overflow: visible !important;
+         }
+         .img-container {
+            padding: 20px;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.03);
+         }
+         .img-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+         }
+         .img-container img {
+            max-width: 100%;
+            max-height: 50px;
+            object-fit: contain;
+            filter: grayscale(0);
+         }
          .sub-title {
             display: inline-block;
             padding: 0 35px !important;

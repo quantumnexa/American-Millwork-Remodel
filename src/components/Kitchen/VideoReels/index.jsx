@@ -106,9 +106,10 @@ const KitchenVideoReels = () => {
                   768: { slidesPerView: 1.8, spaceBetween: 20 },
                   1200: { slidesPerView: 2.2, spaceBetween: 30 },
                 }}
+                style={{ padding: '40px 10px' }}
               >
                 {videos.map((video) => (
-                  <SwiperSlide key={video.id}>
+                  <SwiperSlide key={video.id} style={{ overflow: 'visible' }}>
                     <div className="reel-item">
                       <div className="video-wrapper">
                         <video 
