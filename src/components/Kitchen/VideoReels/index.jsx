@@ -13,30 +13,30 @@ const KitchenVideoReels = () => {
   const videos = [
     {
       id: 1,
-      url: "/assets/img/videos/1.mp4",
+      url: "/assets/img/videos/kitchen/1.mp4",
       poster: "/assets/img/portfolio/1.jpg",
       
     },
     {
       id: 2,
-      url: "/assets/img/videos/2.mp4",
+      url: "/assets/img/videos/kitchen/2.mp4",
       poster: "/assets/img/portfolio/2.jpg",
       
     },
     {
       id: 3,
-      url: "/assets/img/videos/3.mp4",
+      url: "/assets/img/videos/kitchen/3.mp4",
       poster: "/assets/img/portfolio/3.jpg",
     },
     {
       id: 4,
-      url: "/assets/img/videos/4.mp4",
+      url: "/assets/img/videos/kitchen/4.mp4",
       poster: "/assets/img/portfolio/4.jpg",
       
     },
     {
       id: 5,
-      url: "/assets/img/videos/5.mp4",
+      url: "/assets/img/videos/kitchen/5.mp4",
       poster: "/assets/img/portfolio/5.jpg",
     }
   ];
