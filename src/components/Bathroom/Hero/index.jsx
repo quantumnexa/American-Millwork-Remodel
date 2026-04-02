@@ -231,7 +231,7 @@ const BathroomHero = () => {
           color: #fff;
         }
         @media (max-width: 991px) {
-          .caption { padding-top: 0; margin-top: 20px; }
+          .caption { padding-top: 0; margin-top: 0; }
           .hero-row {
             grid-template-columns: 1fr;
             gap: 20px;
@@ -241,22 +241,27 @@ const BathroomHero = () => {
             gap: 12px;
           }
           .hero-col h1 {
-            font-size: 34px !important;
+            font-size: 30px !important;
             margin-bottom: 10px;
+            line-height: 1.2 !important;
+          }
+          .hero-col p {
+            font-size: 14px;
+            margin-bottom: 20px;
           }
           .hero-form {
             padding: 20px;
-            margin-top: 10px;
+            margin-top: 0;
           }
           .form-title {
-            font-size: 20px;
+            font-size: 18px;
             margin-bottom: 15px;
           }
           .slide-inner {
             min-height: 100vh;
             display: flex;
-            align-items: center;
-            padding: 120px 0 60px;
+            align-items: flex-start;
+            padding: 140px 0 60px;
           }
           .hf-input, .hf-select, .hf-textarea {
             padding: 10px 12px;
@@ -268,14 +273,14 @@ const BathroomHero = () => {
         }
         @media (max-width: 767px) {
           .hero-col h1 {
-            font-size: 28px !important;
+            font-size: 26px !important;
           }
           .hero-col h5 {
-            font-size: 13px !important;
+            font-size: 12px !important;
             letter-spacing: 2px !important;
           }
           .slide-inner {
-            padding: 100px 0 40px;
+            padding: 130px 0 40px;
           }
         }
         @media (max-width: 1199px) and (min-width: 992px) {
