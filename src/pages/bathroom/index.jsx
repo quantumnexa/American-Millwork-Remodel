@@ -1,15 +1,12 @@
 import React from "react";
-import dynamic from 'next/dynamic';
 import LightLayout from "../../layouts/light";
 import BathroomHero from "../../components/Bathroom/Hero";
 import BathroomAboutUs2 from "../../components/Bathroom/About-Us2";
 import BathroomAboutUs8 from "../../components/Bathroom/About-Us8";
 import BathroomProcess from "../../components/Bathroom/Process";
 import BathroomNextProject from "../../components/Bathroom/Next-Project";
-
-// Dynamic imports for heavy components
-const BathroomBrands = dynamic(() => import("../../components/Bathroom/Brands"), { ssr: false });
-const BathroomVideoReels = dynamic(() => import("../../components/Bathroom/VideoReels"), { ssr: false });
+import BathroomBrands from "../../components/Bathroom/Brands";
+import BathroomVideoReels from "../../components/Bathroom/VideoReels";
 
 const Bathroom = () => {
   React.useEffect(() => {
