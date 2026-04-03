@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import dynamic from 'next/dynamic';
 import KitchenHero from "../../components/Kitchen/Hero";
 import AboutUs2 from "../../components/Kitchen/About-Us2";
 import Process from "../../components/Kitchen/Process";
@@ -9,8 +10,10 @@ import Services5Light from "../../components/Kitchen/Services5-Light";
 import AboutUs8 from "../../components/Kitchen/About-Us8";
 import Skills2 from "../../components/Kitchen/Skills2";
 import NextProject from "../../components/Kitchen/Next-Project";
-import KitchenBrands from "../../components/Kitchen/Brands";
-import KitchenVideoReels from "../../components/Kitchen/VideoReels";
+
+// Dynamic imports for heavy components
+const KitchenBrands = dynamic(() => import("../../components/Kitchen/Brands"), { ssr: false });
+const KitchenVideoReels = dynamic(() => import("../../components/Kitchen/VideoReels"), { ssr: false });
 
 const Kitchen = () => {
   React.useEffect(() => {
