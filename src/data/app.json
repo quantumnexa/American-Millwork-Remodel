@@ -2,5 +2,5 @@
   "lightLogo": "/assets/img/logo-light.png",
   "darkLogo": "/assets/img/logo-dark.png",
   "mapIframe": "https://www.google.com/maps?q=7322%20Southwest%20Freeway%2C%20Arena%20Tower%20One%2C%20Suite%20140%2C%20Houston%2C%20TX%2077074&output=embed",
-  "showLoading": true
+  "showLoading": false
 }
