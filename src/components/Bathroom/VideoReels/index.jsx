@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, EffectCoverflow } from "swiper";
 import "swiper/css";
@@ -42,12 +42,16 @@ const BathroomVideoReels = () => {
   ];
 
   const handleMouseEnter = (e) => {
-    const video = e.currentTarget.querySelector('video');
-    if (video) video.play();
+    const video = e.currentTarget.querySelector("video");
+    if (!video) return;
+    const playPromise = video.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(() => {});
+    }
   };
 
   const handleMouseLeave = (e) => {
-    const video = e.currentTarget.querySelector('video');
+    const video = e.currentTarget.querySelector("video");
     if (video) {
       video.pause();
       video.currentTime = 0;

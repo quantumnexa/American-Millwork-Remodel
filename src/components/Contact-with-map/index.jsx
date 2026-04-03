@@ -1,5 +1,5 @@
 import React from "react";
-import appData from '../../data/app.json'
+import appData from "../../data/app.json";
 
 const ContactWithMap = () => {
   const [mainService, setMainService] = React.useState("");
@@ -23,19 +23,33 @@ const ContactWithMap = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const phone = formData.get("phone");
-    const service_type = formData.get("service_type");
-    const message = formData.get("message");
-    const org_id = undefined;
-    const website_id = null;
+    const name = formData.get("name")?.toString() || "";
+    const email = formData.get("email")?.toString() || "";
+    const phone = formData.get("phone")?.toString() || "";
+    const main_service = formData.get("main_service")?.toString() || "";
+    const sub_services = (formData.getAll("sub_services[]") || []).map((v) =>
+      v?.toString()
+    );
+    const zip = formData.get("zip")?.toString() || "";
+    const timing = formData.get("timing")?.toString() || "";
+    const budget = formData.get("budget")?.toString() || "";
+    const preferred_contact = formData.get("preferred_contact")?.toString() || "Email";
+    const message = formData.get("message")?.toString() || "";
+    const service_type = [main_service, sub_services.filter(Boolean).join(", ")]
+      .filter(Boolean)
+      .join(" | ");
     const params = new URLSearchParams(typeof window !== "undefined" ? window.location.search : "");
     const utm_source = params.get("utm_source") || null;
     const custom = {
       page: "contact",
       utm_source,
       message,
+      main_service,
+      sub_services: sub_services.filter(Boolean),
+      zip,
+      timing,
+      budget,
+      preferred_contact,
     };
     setStatus("pending");
     try {
@@ -67,7 +81,7 @@ const ContactWithMap = () => {
     <div className="container-fluid">
       <div className="row">
         <div className="col-lg-6 map-box">
-          <iframe src={appData.mapIframe}></iframe>
+          <iframe title="Location map" src={appData.mapIframe} loading="lazy"></iframe>
         </div>
         <div className="col-lg-6 form">
           <form id="contact-form" method="post" className="amr-form" onSubmit={handleSubmit}>
@@ -204,8 +218,8 @@ const ContactWithMap = () => {
                 ></textarea>
               </div>
 
-              <button type="submit" className="btn-curve btn-color" style={{ width: "100%" }}>
-                <span>Send Message</span>
+              <button type="submit" className="btn-curve btn-color" style={{ width: "100%" }} disabled={status === "pending"}>
+                <span>{status === "pending" ? "Submitting..." : "Send Message"}</span>
               </button>
             </div>
           </form>

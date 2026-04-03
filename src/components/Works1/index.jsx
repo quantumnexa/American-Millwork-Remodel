@@ -35,7 +35,10 @@ const Works1 = () => {
                 className="swiper-wrapper"
                 slidesPerView={2}
                 centeredSlides={true}
-                autoPlay={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
                 loop={true}
                 navigation={{
                   prevEl: navigationPrevRef.current,
@@ -82,7 +85,7 @@ const Works1 = () => {
                       ></div>
                       <div className="cont">
                         <h6>
-                          <Link href="/project-detLinkils">{slide.title}</Link>
+                          <Link href="/project-details">{slide.title}</Link>
                         </h6>
                         <h4>
                           <Link href="/project-details">{slide.secTex}</Link>
