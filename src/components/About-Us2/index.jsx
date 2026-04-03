@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import Image from "next/image";
 import aboutUs2Data from "../../data/about-us2.json";
 import Link from 'next/link'
 
@@ -44,13 +44,27 @@ const AboutUs2 = () => {
                   ></div>
                 </div>
                 <div className="col-md-8 wow fadeInUp" data-wow-delay=".3s">
-                  <div className="img mb-20 wow imago">
-                    <img src={aboutUs2Data.image1} alt="" />
+                  <div className="img mb-20 wow imago" style={{ position: 'relative', width: '100%', height: '300px' }}>
+                    <Image 
+                      src={aboutUs2Data.image1} 
+                      alt="about" 
+                      layout="fill"
+                      objectFit="cover"
+                      placeholder="blur"
+                      blurDataURL="/assets/img/line-pattern.png"
+                    />
                   </div>
                 </div>
                 <div className="col-md-7 wow fadeInUp" data-wow-delay=".3s">
-                  <div className="img wow imago">
-                    <img src={aboutUs2Data.image2} alt="" />
+                  <div className="img wow imago" style={{ position: 'relative', width: '100%', height: '300px' }}>
+                    <Image 
+                      src={aboutUs2Data.image2} 
+                      alt="about" 
+                      layout="fill"
+                      objectFit="cover"
+                      placeholder="blur"
+                      blurDataURL="/assets/img/line-pattern.png"
+                    />
                   </div>
                 </div>
                 <div className="col-md-5">

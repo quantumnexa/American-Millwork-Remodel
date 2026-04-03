@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const KitchenHero = () => {
   const [status, setStatus] = React.useState(null);
@@ -12,7 +13,7 @@ const KitchenHero = () => {
     const message = formData.get("message");
     const params = new URLSearchParams(typeof window !== "undefined" ? window.location.search : "");
     const utm_source = params.get("utm_source") || null;
-    const custom = { page: "kitchen-hero", utm_source, hear, message };
+    const custom = { page: "kitchen-hero", utm_source, message };
     setStatus("pending");
     try {
       const res = await fetch("/api/leads", {
@@ -22,7 +23,7 @@ const KitchenHero = () => {
           name,
           email,
           phone,
-          service_type,
+          service_type: "Kitchen Remodeling",
           source: "website",
           custom,
         }),
@@ -44,11 +45,15 @@ const KitchenHero = () => {
       <header className="slid-half kitchen-hero">
         <div className="cta__slider-wrapper nofull">
           <div className="media-wrapper slide-inner valign">
-            <div
-              className="bg-img"
-              style={{ backgroundImage: "url(/assets/img/hero/hero-kitchen.png)" }}
-              data-overlay-dark="5"
-            ></div>
+            <div className="bg-img" data-overlay-dark="5">
+              <Image
+                src="/assets/img/hero/hero-kitchen.png"
+                alt="Kitchen Hero"
+                layout="fill"
+                objectFit="cover"
+                priority={true}
+              />
+            </div>
             <div className="container">
               <div className="row">
                 <div className="col-lg-12">

@@ -2,6 +2,7 @@ import React from "react";
 import intro2Data from "../../data/Intro2.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Split from "../Split";
+import Image from "next/image";
 
 import SwiperCore, { Navigation, Pagination, Parallax, Autoplay } from "swiper";
 
@@ -106,11 +107,15 @@ const IntroWithVertical = ({ customData }) => {
                   className="cta__slider-item swiper-slide"
                 >
                   <div className="media-wrapper slide-inner valign">
-                    <div
-                      className="bg-img"
-                      style={{ backgroundImage: `url(${slide.image})` }}
-                      data-overlay-dark="5"
-                    ></div>
+                    <div className="bg-img" data-overlay-dark="5">
+                      <Image
+                        src={slide.image}
+                        alt={slide.title.second}
+                        layout="fill"
+                        objectFit="cover"
+                        priority={slide.id === 1}
+                      />
+                    </div>
                     <div className="container">
                       <div className="row">
                         <div className="col-lg-10 offset-lg-1">

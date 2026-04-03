@@ -1,14 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import dynamic from "next/dynamic";
 import AboutUs2 from "../../components/About-Us2";
 import IntroWithVertical from "../../components/Intro-with-vertical";
-import Process from "../../components/Process";
 import LightLayout from "../../layouts/light";
 import Services3 from "../../components/Services3";
-import Services5Light from "../../components/Services5-Light";
 import AboutUs8 from "../../components/About-Us8";
-import Skills2 from "../../components/Skills2";
-import NextProject from "../../components/Next-Project";
+
+const Process = dynamic(() => import("../../components/Process"), { ssr: false });
+const Services5Light = dynamic(() => import("../../components/Services5-Light"), { ssr: false });
+
+const Skills2 = dynamic(() => import("../../components/Skills2"), {
+  loading: () => <div className="section-padding text-center">Loading...</div>,
+  ssr: false
+});
+
+const NextProject = dynamic(() => import("../../components/Next-Project"), {
+  ssr: false
+});
 
 
 const Home1 = () => {

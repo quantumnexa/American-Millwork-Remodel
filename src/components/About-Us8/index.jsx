@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Image from "next/image";
 
 const AboutUs8 = ({
   subTitle = "Trust Section",
@@ -32,19 +33,37 @@ const AboutUs8 = ({
               <div className="col-lg-6">
                 <div className="img-collage wow fadeInUp" data-wow-delay=".3s">
                   {singleImage ? (
-                    <div className="img">
-                      <img src={image1} alt="" style={{ width: '100%', borderRadius: '10px', height: '500px', objectFit: 'cover' }} />
+                    <div className="img" style={{ position: 'relative', width: '100%', height: '500px' }}>
+                      <Image 
+                        src={image1} 
+                        alt="about" 
+                        layout="fill"
+                        objectFit="cover"
+                        style={{ borderRadius: '10px' }}
+                      />
                     </div>
                   ) : (
                     <div className="row">
                       <div className="col-md-6">
-                        <div className="img mb-30">
-                          <img src={image1} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
+                        <div className="img mb-30" style={{ position: 'relative', width: '100%', height: '400px' }}>
+                          <Image 
+                            src={image1} 
+                            alt="about" 
+                            layout="fill"
+                            objectFit="cover"
+                            style={{ borderRadius: '10px' }}
+                          />
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <div className="img mb-30" style={{ marginTop: '50px' }}>
-                          <img src={image2} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
+                        <div className="img mb-30" style={{ marginTop: '50px', position: 'relative', width: '100%', height: '400px' }}>
+                          <Image 
+                            src={image2} 
+                            alt="about" 
+                            layout="fill"
+                            objectFit="cover"
+                            style={{ borderRadius: '10px' }}
+                          />
                         </div>
                       </div>
                     </div>
@@ -115,19 +134,37 @@ const AboutUs8 = ({
               <div className="col-lg-6 order1 order-lg-2">
                 <div className="img-collage wow fadeInUp" data-wow-delay=".3s">
                   {singleImage ? (
-                    <div className="img">
-                      <img src={image1} alt="" style={{ width: '100%', borderRadius: '10px', height: '500px', objectFit: 'cover' }} />
+                    <div className="img" style={{ position: 'relative', width: '100%', height: '500px' }}>
+                      <Image 
+                        src={image1} 
+                        alt="about" 
+                        layout="fill"
+                        objectFit="cover"
+                        style={{ borderRadius: '10px' }}
+                      />
                     </div>
                   ) : (
                     <div className="row">
                       <div className="col-md-6">
-                        <div className="img mb-30">
-                          <img src={image1} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
+                        <div className="img mb-30" style={{ position: 'relative', width: '100%', height: '400px' }}>
+                          <Image 
+                            src={image1} 
+                            alt="about" 
+                            layout="fill"
+                            objectFit="cover"
+                            style={{ borderRadius: '10px' }}
+                          />
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <div className="img mb-30" style={{ marginTop: '50px' }}>
-                          <img src={image2} alt="" style={{ width: '100%', borderRadius: '10px', height: '400px', objectFit: 'cover' }} />
+                        <div className="img mb-30" style={{ marginTop: '50px', position: 'relative', width: '100%', height: '400px' }}>
+                          <Image 
+                            src={image2} 
+                            alt="about" 
+                            layout="fill"
+                            objectFit="cover"
+                            style={{ borderRadius: '10px' }}
+                          />
                         </div>
                       </div>
                     </div>

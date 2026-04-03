@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <ScrollToTop />
 
-      <Script id="wow" src="/assets/js/wow.min.js"></Script>
+      <Script id="wow" src="/assets/js/wow.min.js" strategy="beforeInteractive"></Script>
       <Script
         id="splitting"
         strategy="beforeInteractive"
@@ -33,8 +33,9 @@ function MyApp({ Component, pageProps }) {
       <Script
         id="simpleParallax"
         src="/assets/js/simpleParallax.min.js"
+        strategy="lazyOnload"
       ></Script>
-      <Script id="isotope" src="/assets/js/isotope.pkgd.min.js"></Script>
+      <Script id="isotope" src="/assets/js/isotope.pkgd.min.js" strategy="lazyOnload"></Script>
 
       <Script src="/assets/js/main.js" id="init" strategy="lazyOnload"></Script>
     </>

@@ -4,7 +4,7 @@ class Split extends React.Component {
   target = React.createRef();
 
   split = () => {
-    if (this.target.current) {
+    if (this.target.current && typeof Splitting === "function") {
       Splitting({ target: this.target.current });
     }
   };

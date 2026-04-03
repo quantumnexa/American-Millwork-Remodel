@@ -120,7 +120,7 @@ const KitchenVideoReels = () => {
                           loop 
                           muted 
                           playsInline 
-                          preload="metadata"
+                          preload="none"
                           poster={video.poster}
                           className="reel-video"
                           controls
