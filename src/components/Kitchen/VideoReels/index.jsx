@@ -67,7 +67,7 @@ const KitchenVideoReels = () => {
                 Experience Our Work
               </h6>
               <h2 className="mb-20 playfont" style={{ fontSize: "45px", fontWeight: "600", color: "#111", lineHeight: "1.2" }}>
-                Transforming Spaces, <br /> One Kitchen at a Time
+                Where Kitchen Design <br/> Meets Expert Millwork
               </h2>
               <p className="text-gray mb-40">
                 Take a closer look at our recent kitchen transformations. From custom cabinetry to modern islands, see how we bring high-quality craftsmanship to every home.

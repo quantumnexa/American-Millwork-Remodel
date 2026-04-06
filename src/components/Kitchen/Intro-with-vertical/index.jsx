@@ -231,7 +231,7 @@ const IntroWithVertical = ({ customData, withForm }) => {
                                     </div>
                                     <textarea className="hf-textarea" name="message" rows="3" placeholder="Project Description" required />
                                     <button className="btn-curve btn-color hf-btn" type="submit" disabled={status === "pending"}>
-                                      <span>{status === "pending" ? "Submitting..." : "Get A Quote"}</span>
+                                      <span>{status === "pending" ? "Submitting..." : "Get A Free Quote"}</span>
                                     </button>
                                     <div className="hf-messages">
                                       {status === "success" && <p>Thank you! We have received your request.</p>}

@@ -6,7 +6,7 @@ import IntroWithVerticalTwo from "../../components/Intro-with-vertical-2";
 const FAQPage = () => {
   const items = [
     {
-      q: "How do I get a quote?",
+      q: "How do I Get A Free Quote?",
       a:
         "Send photos, measurements, drawings, or schedule a video consultation. Our team reviews the information and prepares a quote.",
     },
