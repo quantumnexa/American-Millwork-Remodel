@@ -230,42 +230,6 @@ const KitchenHero = () => {
         .hf-btn {
           width: 100%;
           margin-top: 6px;
-          position: relative;
-          overflow: hidden;
-          border: none;
-          background: linear-gradient(90deg, #b68c4a 0%, #ffe28c 45%, #f1bd47 100%);
-          color: #111;
-          font-weight: 700;
-          letter-spacing: 0.02em;
-          padding: 16px 20px;
-          border-radius: 999px;
-          box-shadow: 0 12px 30px rgba(182, 140, 74, 0.18);
-          filter: drop-shadow(0 12px 30px rgba(182, 140, 74, 0.2));
-          transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
-        }
-        .hf-btn:hover:not(:disabled) {
-          transform: translateY(-2px);
-          box-shadow: 0 18px 40px rgba(182, 140, 74, 0.3);
-          filter: drop-shadow(0 18px 45px rgba(182, 140, 74, 0.25));
-        }
-        .hf-btn:active:not(:disabled) {
-          transform: translateY(0);
-        }
-        .hf-btn span {
-          position: relative;
-          z-index: 1;
-        }
-        .hf-btn::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.35), transparent 30%), radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.2), transparent 40%);
-          opacity: 0.75;
-          pointer-events: none;
-          transition: opacity 0.25s ease;
-        }
-        .hf-btn:hover::before {
-          opacity: 1;
         }
         .hf-messages {
           margin-top: 10px;
