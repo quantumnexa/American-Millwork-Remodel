@@ -232,7 +232,10 @@ const KitchenHero = () => {
           margin-top: 6px;
           position: relative;
           overflow: hidden;
-          animation: btnPulse 4s ease-in-out infinite;
+          animation: btnPulse 4s ease-in-out infinite, btnBlink 1.6s ease-in-out infinite;
+          background-color: #B68C4A;
+          color: #fff;
+          border: 1px solid #D7A94C;
         }
         .hf-btn span {
           position: relative;
@@ -258,6 +261,18 @@ const KitchenHero = () => {
           }
           50% {
             box-shadow: 0 0 28px rgba(182, 140, 74, 0.25);
+          }
+        }
+        @keyframes btnBlink {
+          0%, 100% {
+            background-color: #B68C4A;
+            color: #fff;
+            transform: scale(1);
+          }
+          50% {
+            background-color: #FFD166;
+            color: #111;
+            transform: scale(1.02);
           }
         }
         @keyframes shineSweep {
