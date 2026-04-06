@@ -75,17 +75,17 @@ const KitchenHero = () => {
                         </p>
                       </div>
                       <div className="hero-form">
-                        <h3 className="form-title">Get a Free Quote</h3>
+                        <h3 className="form-title">Get a Free Quote in 10 minutes</h3>
                         <form onSubmit={handleSubmit}>
                           <div className="row-2">
                             <input className="hf-input" name="name" type="text" placeholder="Name" required />
                             <input className="hf-input" name="phone" type="tel" placeholder="Phone" required />
                           </div>
-                          
-                         
+
+
                           <textarea className="hf-textarea" name="message" rows="3" placeholder="Project Description" required />
                           <button className="btn-curve btn-color hf-btn" type="submit" disabled={status === "pending"}>
-                            <span>{status === "pending" ? "Submitting..." : "Get A Quote"}</span>
+                            <span>{status === "pending" ? "Submitting..." : "Get a Free Quote in 10 minutes"}</span>
                           </button>
                           <div className="hf-messages">
                             {status === "success" && <p>Thank you! We have received your request.</p>}
