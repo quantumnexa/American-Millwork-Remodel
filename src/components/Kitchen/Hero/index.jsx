@@ -230,10 +230,55 @@ const KitchenHero = () => {
         .hf-btn {
           width: 100%;
           margin-top: 6px;
+          position: relative;
+          overflow: hidden;
+          animation: btnPulse 4s ease-in-out infinite;
+        }
+        .hf-btn span {
+          position: relative;
+          z-index: 1;
+        }
+        .hf-btn::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.16), rgba(255,255,255,0.04));
+          opacity: 0;
+          transform: translateX(-120%);
+          animation: shineSweep 4s ease-in-out infinite;
+          pointer-events: none;
         }
         .hf-messages {
           margin-top: 10px;
           color: #fff;
+        }
+        @keyframes btnPulse {
+          0%, 100% {
+            box-shadow: 0 0 0 rgba(182, 140, 74, 0.18);
+          }
+          50% {
+            box-shadow: 0 0 28px rgba(182, 140, 74, 0.25);
+          }
+        }
+        @keyframes shineSweep {
+          0% {
+            opacity: 0;
+            transform: translateX(-120%);
+          }
+          30% {
+            opacity: 0.15;
+          }
+          50% {
+            opacity: 0.55;
+            transform: translateX(100%);
+          }
+          80% {
+            opacity: 0.15;
+          }
+          100% {
+            opacity: 0;
+            transform: translateX(120%);
+          }
         }
         @media (max-width: 991px) {
           .caption { padding-top: 0; margin-top: 0; }
