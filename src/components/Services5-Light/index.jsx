@@ -31,23 +31,22 @@ const Services5Light = ({
     text: "For homeowners and property owners, we make the quoting process easier. Clients can submit photos, measurements, and videos or walk through the space live online. Our team can review the layout, prepare a material quote, and help coordinate local installation options.",
     keyMessage: "You do not need to start with a long in-person process to get real pricing. We can begin online.",
     items: [
-  
   { icon: "flaticon-kitchen", title: "Custom & Ready-to-Assemble Kitchen Cabinets" },
   { icon: "flaticon-renovation", title: "Custom & Ready-to-Assemble Bathroom Vanities" },
-  { icon: "flaticon-house-plan", title: "All Flooring Solutions" },
+  { icon: "flaticon-house-plan", title: "Complete Flooring Solutions" },
   { icon: "flaticon-interior-design", title: "Shower Walls, Kitchen Backsplashes & Countertops" },
   { icon: "flaticon-interior-design", title: "TV Feature Walls & Media Units" },
   { icon: "flaticon-interior-design", title: "Accent Walls & Built-In Closet Solutions" },
-  { icon: "flaticon-furniture", title: "Interior Trim Work (Crown Molding, Baseboards, etc.)" },
-  { icon: "flaticon-furniture", title: "Exterior Structures (Gazebos, Outdoor Features)" },
-  { icon: "flaticon-sketch", title: "Material Packages (In-House & Outsourced Options)" },
+  { icon: "flaticon-furniture", title: "Interior Trim Work (Crown Molding, Baseboards, and More)" },
+  { icon: "flaticon-furniture", title: "Exterior Structures (Gazebos, Outdoor Features, Custom Carpentry)" },
+  { icon: "flaticon-sketch", title: "Material Packages (Available In-House & Outsourced)" },
   { icon: "flaticon-plan", title: "Free Floor Plans & Layout Planning" },
   { icon: "flaticon-computer", title: "Remote Consultations via Zoom or Google Meet" },
-  { icon: "flaticon-home-1", title: "Modern Home Upgrades & Renovations" },
+  { icon: "flaticon-home-1", title: "Modern Home Upgrades, Built-Ins & Renovation Solutions" },
   { icon: "flaticon-living-room", title: "Finish Carpentry by Skilled In-House Team" },
-  { icon: "flaticon-sketch", title: "Expert Designer Assistance at No Cost" }
-
-    ],
+  { icon: "flaticon-sketch", title: "Expert Design Assistance at No Cost" },
+  { icon: "flaticon-sketch", title: "Fast Quotes & Quick Turnaround for Projects" }
+],
   };
 
   const commercialData = commercialDataOverride || defaultCommercialData;
