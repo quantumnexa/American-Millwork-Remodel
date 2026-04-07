@@ -15,7 +15,7 @@ const AboutUs2 = () => {
             >
               <h6 className="sub-title main-color mb-10 ls10" style={{ color: '#B68C4A', letterSpacing: '4px', textTransform: 'uppercase', fontWeight: '500' }}> What we do </h6>
               <h2 className="mb-20 playfont">
-                One Platform For <span className="text-highlight">Custom Carpentry,</span> <span className="text-highlight">Millwork Assembly</span> And Kitchen & Bathroom <span className="text-highlight">Interior Finishes</span>
+                One Platform For <span className="text-highlight">Custom Carpentry,</span> <span className="text-highlight">Millwork Assembly</span>, Kitchen & Bathroom <span className="text-highlight">Interior Finishes</span>
               </h2>
               <p>
                 A modern system for millwork, remodeling, and interior finishes. We combine commercial millwork expertise with residential material supply and remote project coordination to simplify the entire building and remodeling process.
