@@ -23,47 +23,26 @@ const ContactWithMap = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
-    const name = formData.get("name")?.toString() || "";
-    const email = formData.get("email")?.toString() || "";
-    const phone = formData.get("phone")?.toString() || "";
-    const main_service = formData.get("main_service")?.toString() || "";
-    const sub_services = (formData.getAll("sub_services[]") || []).map((v) =>
-      v?.toString()
-    );
-    const zip = formData.get("zip")?.toString() || "";
-    const timing = formData.get("timing")?.toString() || "";
-    const budget = formData.get("budget")?.toString() || "";
-    const preferred_contact = formData.get("preferred_contact")?.toString() || "Email";
-    const message = formData.get("message")?.toString() || "";
-    const service_type = [main_service, sub_services.filter(Boolean).join(", ")]
-      .filter(Boolean)
-      .join(" | ");
     const params = new URLSearchParams(typeof window !== "undefined" ? window.location.search : "");
     const utm_source = params.get("utm_source") || null;
     const custom = {
       page: "contact",
       utm_source,
-      message,
-      main_service,
-      sub_services: sub_services.filter(Boolean),
-      zip,
-      timing,
-      budget,
-      preferred_contact,
+      message: formData.get("message"),
+      main_service: formData.get("main_service"),
+      sub_services: formData.getAll("sub_services[]").filter(Boolean),
+      zip: formData.get("zip"),
+      timing: formData.get("timing"),
+      budget: formData.get("budget"),
+      preferred_contact: formData.get("preferred_contact") || "Email",
     };
+    formData.append("custom", JSON.stringify(custom));
+    formData.append("source", "website");
     setStatus("pending");
     try {
       const res = await fetch("/api/leads", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name,
-          email,
-          phone,
-          service_type,
-          source: "website",
-          custom,
-        }),
+        body: formData,
       });
       const data = await res.json();
       if (data.ok) {
@@ -216,6 +195,19 @@ const ContactWithMap = () => {
                   required="required"
                   className="amr-textarea"
                 ></textarea>
+              </div>
+
+              <div className="form-group">
+                <div className="amr-group-title">Upload Images or Videos</div>
+                <input
+                  id="form_drawings"
+                  type="file"
+                  name="drawings"
+                  accept="image/*,video/*"
+                  multiple
+                  className="amr-input"
+                />
+                <p className="amr-form-sub">Upload photos or videos of your space to get a quick quote and estimate.</p>
               </div>
 
               <button type="submit" className="btn-curve btn-color" style={{ width: "100%" }} disabled={status === "pending"}>
