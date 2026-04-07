@@ -154,6 +154,11 @@ const Navbar = ({ navbarRef, logoRef, logoClass, isKitchen, isBathroom }) => {
                       </Link>
                     </div>
                   </li>
+                  <li className="nav-item">
+                    <Link href="/project">
+                      <a className={`nav-link ${isActive("/project") ? "active" : ""}`}>Gallery</a>
+                    </Link>
+                  </li>
                 </>
               )}
 
