@@ -31,21 +31,23 @@ const Services5Light = ({
     text: "For homeowners and property owners, we make the quoting process easier. Clients can submit photos, measurements, and videos or walk through the space live online. Our team can review the layout, prepare a material quote, and help coordinate local installation options.",
     keyMessage: "You do not need to start with a long in-person process to get real pricing. We can begin online.",
     items: [
-  { icon: "flaticon-kitchen", title: "Custom & Ready-to-Assemble Kitchen Cabinets" },
-  { icon: "flaticon-renovation", title: "Custom & Ready-to-Assemble Bathroom Vanities" },
-  { icon: "flaticon-house-plan", title: "Complete Flooring Solutions" },
-  { icon: "flaticon-kitchen-2", title: "Shower Walls, Kitchen Backsplashes & Countertops" },
-  { icon: "flaticon-living-room-1", title: "TV Feature Walls & Media Units" },
-  { icon: "flaticon-home", title: "Accent Walls & Built-In Closet Solutions" },
-  { icon: "flaticon-sofa", title: "Interior Trim Work (Crown Molding, Baseboards, and More)" },
-  { icon: "flaticon-sofa-1", title: "Exterior Structures (Gazebos, Outdoor Features, Custom Carpentry)" },
-  { icon: "flaticon-desk-lamp", title: "Material Packages (Available In-House & Outsourced)" },
-  { icon: "flaticon-plan", title: "Free Floor Plans & Layout Planning" },
-  { icon: "flaticon-computer", title: "Remote Consultations via Zoom or Google Meet" },
-  { icon: "flaticon-home-1", title: "Modern Home Upgrades, Built-Ins & Renovation Solutions" },
-  { icon: "flaticon-living-room", title: "Finish Carpentry by Skilled In-House Team" },
-  { icon: "flaticon-interior-design", title: "Expert Design Assistance at No Cost" },
-  { icon: "flaticon-plan", title: "Fast Quotes & Quick Turnaround for Projects" }
+  
+  { icon: "flaticon-kitchen", title: "• Custom Ready-to-Assemble Kitchen Cabinets" },
+  { icon: "flaticon-renovation", title: "• Custom Ready-to-Assemble Bathroom Vanities" },
+  { icon: "flaticon-house-plan", title: "• Complete Flooring Solutions" },
+  { icon: "flaticon-kitchen-1", title: "• Shower Walls • Kitchen Backsplashes • Countertops" },
+  { icon: "flaticon-living-room", title: "• TV Feature Walls • Media Units" },
+  { icon: "flaticon-home", title: "• Accent Walls • Built-In Closet Solutions" },
+  { icon: "flaticon-sofa", title: "• Interior Trim Work • Crown Molding • Baseboards" },
+  { icon: "flaticon-sofa-1", title: "• Exterior Structures • Gazebos • Outdoor Features • Custom Carpentry" },
+  { icon: "flaticon-desk-lamp", title: "• Material Packages • In-House • Outsourced Options" },
+  { icon: "flaticon-plan", title: "• Free Floor Plans • Layout Planning" },
+  { icon: "flaticon-computer", title: "• Remote Consultations • Zoom • Google Meet" },
+  { icon: "flaticon-home-1", title: "• Modern Home Upgrades • Built-Ins • Renovation Solutions" },
+  { icon: "flaticon-living-room", title: "• Finish Carpentry • Skilled In-House Team" },
+  { icon: "flaticon-interior-design", title: "• Expert Design Assistance • No Cost" },
+  { icon: "flaticon-plan", title: "• Fast Quotes • Quick Project Turnaround" }  
+
 ],
   };
 
@@ -114,7 +116,7 @@ const Services5Light = ({
                     key={index}
                   >
                     <span className={`icon ${item.icon}`}></span>
-                    <h6 className="mb-20">{item.title}</h6>
+                    <h6 className="mb-20" dangerouslySetInnerHTML={{__html: item.title.replace(/•/g, '<br />•')}} ></h6>
                   </div>
                 );
               })}
