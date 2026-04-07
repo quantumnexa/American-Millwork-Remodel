@@ -34,18 +34,18 @@ const Services5Light = ({
   { icon: "flaticon-kitchen", title: "Custom & Ready-to-Assemble Kitchen Cabinets" },
   { icon: "flaticon-renovation", title: "Custom & Ready-to-Assemble Bathroom Vanities" },
   { icon: "flaticon-house-plan", title: "Complete Flooring Solutions" },
-  { icon: "flaticon-interior-design", title: "Shower Walls, Kitchen Backsplashes & Countertops" },
-  { icon: "flaticon-interior-design", title: "TV Feature Walls & Media Units" },
-  { icon: "flaticon-interior-design", title: "Accent Walls & Built-In Closet Solutions" },
-  { icon: "flaticon-furniture", title: "Interior Trim Work (Crown Molding, Baseboards, and More)" },
-  { icon: "flaticon-furniture", title: "Exterior Structures (Gazebos, Outdoor Features, Custom Carpentry)" },
-  { icon: "flaticon-sketch", title: "Material Packages (Available In-House & Outsourced)" },
+  { icon: "flaticon-kitchen-2", title: "Shower Walls, Kitchen Backsplashes & Countertops" },
+  { icon: "flaticon-living-room-1", title: "TV Feature Walls & Media Units" },
+  { icon: "flaticon-home", title: "Accent Walls & Built-In Closet Solutions" },
+  { icon: "flaticon-sofa", title: "Interior Trim Work (Crown Molding, Baseboards, and More)" },
+  { icon: "flaticon-sofa-1", title: "Exterior Structures (Gazebos, Outdoor Features, Custom Carpentry)" },
+  { icon: "flaticon-desk-lamp", title: "Material Packages (Available In-House & Outsourced)" },
   { icon: "flaticon-plan", title: "Free Floor Plans & Layout Planning" },
   { icon: "flaticon-computer", title: "Remote Consultations via Zoom or Google Meet" },
   { icon: "flaticon-home-1", title: "Modern Home Upgrades, Built-Ins & Renovation Solutions" },
   { icon: "flaticon-living-room", title: "Finish Carpentry by Skilled In-House Team" },
-  { icon: "flaticon-sketch", title: "Expert Design Assistance at No Cost" },
-  { icon: "flaticon-sketch", title: "Fast Quotes & Quick Turnaround for Projects" }
+  { icon: "flaticon-interior-design", title: "Expert Design Assistance at No Cost" },
+  { icon: "flaticon-plan", title: "Fast Quotes & Quick Turnaround for Projects" }
 ],
   };
 
