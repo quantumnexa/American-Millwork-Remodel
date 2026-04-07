@@ -16,9 +16,9 @@ const NextProject = ({
             <div className="content text-center">
               <Split>
                 <h6
-                  className="wow txt words chars splitting text-highlight mb-10"
+                  className="wow txt words chars splitting mb-10"
                   data-splitting
-                  style={{ color: '#B68C4A', letterSpacing: '4px', textTransform: 'uppercase' }}
+                  style={{ color: 'white', letterSpacing: '4px', textTransform: 'uppercase' }}
                 >
                   {title}
                 </h6>

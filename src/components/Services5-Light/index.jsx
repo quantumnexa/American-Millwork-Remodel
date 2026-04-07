@@ -40,7 +40,7 @@ const Services5Light = ({
   { icon: "flaticon-home", title: "• Accent Walls • Built-In Closet Solutions" },
   { icon: "flaticon-sofa", title: "• Interior Trim Work • Crown Molding • Baseboards" },
   { icon: "flaticon-sofa-1", title: "• Exterior Structures • Gazebos • Outdoor Features • Custom Carpentry" },
-  { icon: "flaticon-desk-lamp", title: "• Material Packages • In-House • Outsourced Options" },
+  { icon: "flaticon-desk-lamp", title: "• Material Packages • In-House & Outsourced Options" },
   { icon: "flaticon-plan", title: "• Free Floor Plans • Layout Planning" },
   { icon: "flaticon-computer", title: "• Remote Consultations • Zoom • Google Meet" },
   { icon: "flaticon-home-1", title: "• Modern Home Upgrades • Built-Ins • Renovation Solutions" },
@@ -100,7 +100,7 @@ const Services5Light = ({
           </div>
         </div>
         <div className="row justify-content-center">
-          <div className="col-lg-8">
+          <div className="col-lg-12 col-md-12">
             <div className="row wow fadeInUp">
               {currentData.items.map((item, index) => {
                 // Calculate how many items per row based on total items
