@@ -9,8 +9,8 @@ const Services5Light = ({
 
   const defaultCommercialData = {
     subtitle: "Commercial Millwork Focus",
-    title: "Commercial Millwork For Interiors That Need To Impress",
-    text: "We focus heavily on custom millwork and finish carpentry for commercial projects including restaurants, lobbies, retail spaces, office interiors, hospitality spaces, and franchise build-outs. We can also provide shop drawings and scope coordination for production and installation.",
+    title: "25+ Years of Custom Millwork Expertise",
+    text: "With 25 years of experience, we specialize in providing custom millwork for hotel lobbies, restaurants, medical offices, medical buildings, clinics, and all types of millwork projects.",
     items: [
       { icon: "flaticon-kitchen-1", title: "Restaurants" },
       { icon: "flaticon-home-1", title: "Lobbies" },
@@ -27,20 +27,26 @@ const Services5Light = ({
 
   const defaultResidentialData = {
     subtitle: "Residential Remodel Focus",
-    title: "Kitchen, Bathroom And Flooring Remodels Made Simple",
+    title: "Remodeling and New Construction Made Simple.",
     text: "For homeowners and property owners, we make the quoting process easier. Clients can submit photos, measurements, and videos or walk through the space live online. Our team can review the layout, prepare a material quote, and help coordinate local installation options.",
     keyMessage: "You do not need to start with a long in-person process to get real pricing. We can begin online.",
     items: [
-      { icon: "flaticon-kitchen", title: "Kitchen Cabinets" },
-      { icon: "flaticon-renovation", title: "Bathroom Vanities" },
-      { icon: "flaticon-house-plan", title: "Flooring Solutions" },
-      { icon: "flaticon-interior-design", title: "Tile & Backsplash" },
-      { icon: "flaticon-furniture", title: "Interior Trim" },
-      { icon: "flaticon-sketch", title: "Material Packages" },
-      { icon: "flaticon-plan", title: "Layout Planning" },
-      { icon: "flaticon-computer", title: "Remote Consultations" },
-      { icon: "flaticon-home-1", title: "Modern Upgrades" },
-      { icon: "flaticon-living-room", title: "Finish Carpentry" },
+  
+  { icon: "flaticon-kitchen", title: "Custom & Ready-to-Assemble Kitchen Cabinets" },
+  { icon: "flaticon-renovation", title: "Custom & Ready-to-Assemble Bathroom Vanities" },
+  { icon: "flaticon-house-plan", title: "All Flooring Solutions" },
+  { icon: "flaticon-interior-design", title: "Shower Walls, Kitchen Backsplashes & Countertops" },
+  { icon: "flaticon-interior-design", title: "TV Feature Walls & Media Units" },
+  { icon: "flaticon-interior-design", title: "Accent Walls & Built-In Closet Solutions" },
+  { icon: "flaticon-furniture", title: "Interior Trim Work (Crown Molding, Baseboards, etc.)" },
+  { icon: "flaticon-furniture", title: "Exterior Structures (Gazebos, Outdoor Features)" },
+  { icon: "flaticon-sketch", title: "Material Packages (In-House & Outsourced Options)" },
+  { icon: "flaticon-plan", title: "Free Floor Plans & Layout Planning" },
+  { icon: "flaticon-computer", title: "Remote Consultations via Zoom or Google Meet" },
+  { icon: "flaticon-home-1", title: "Modern Home Upgrades & Renovations" },
+  { icon: "flaticon-living-room", title: "Finish Carpentry by Skilled In-House Team" },
+  { icon: "flaticon-sketch", title: "Expert Designer Assistance at No Cost" }
+
     ],
   };
 
@@ -120,7 +126,7 @@ const Services5Light = ({
           <div className="col-lg-12 text-center">
             <Link href="/contact">
               <a className="btn-curve btn-color wow fadeInUp" data-wow-delay=".5s">
-                <span>Get My Quote</span>
+                <span>Get Free Quote</span>
               </a>
             </Link>
           </div>

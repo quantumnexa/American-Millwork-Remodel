@@ -130,7 +130,7 @@ const IntroWithVertical = ({ customData }) => {
                                 <h1
                                   data-splitting
                                   className="words chars splitting"
-                                  style={{ whiteSpace: 'nowrap', fontSize: '55px' }}
+                                  style={{ whiteSpace: 'normal', wordBreak: 'break-word', fontSize: '55px' }}
                                 >
                                   <Link href="#">{slide.title.second}</Link>
                                 </h1>
@@ -145,14 +145,14 @@ const IntroWithVertical = ({ customData }) => {
                             {customData ? (
                               <Link href="/about">
                                 <a className="btn-curve btn-color mt-30">
-                                  <span>Read More</span>
+                                  <span>Find out more</span>
                                 </a>
                               </Link>
                             ) : (
                               <div className="buttons-row valign" style={{display: 'flex', gap: '30px'}}>
                                 <Link href="/work1">
                                   <a className="btn-curve btn-color mt-30">
-                                    <span>Get My Quote</span>
+                                    <span>Get Free Quote</span>
                                   </a>
                                 </Link>
                                 <Link href="/contact">

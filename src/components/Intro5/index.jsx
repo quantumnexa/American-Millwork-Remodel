@@ -25,7 +25,7 @@ const Intro5 = () => {
               </p>
               <Link href="/project-details">
                 <a className="btn-curve btn-bord btn-lit mt-30">
-                  <span>Read More</span>
+                  <span>Find out more</span>
                 </a>
               </Link>
             </div>

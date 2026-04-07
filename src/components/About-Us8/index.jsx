@@ -3,12 +3,12 @@ import React from "react";
 import Image from "next/image";
 
 const AboutUs8 = ({
-  subTitle = "Trust Section",
-  title = (
-    <>
-      Built for clients who want <span className="text-highlight">Detail</span>, <span className="text-highlight">Speed</span> and <span className="text-highlight">Quality</span>
-    </>
-  ),
+ subTitle = "Honest pricing with no hidden cost",
+title = (
+  <>
+    Trusted craftsmanship for <span className="text-highlight">Cabinets</span>, <span className="text-highlight">Millwork</span>, and <span className="text-highlight">Custom Carpentry</span>
+  </>
+),
   text = "",
   points = [
     { icon: "flaticon-furniture", text: "Custom millwork focus" },

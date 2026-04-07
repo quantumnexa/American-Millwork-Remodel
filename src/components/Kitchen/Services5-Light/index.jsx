@@ -117,7 +117,7 @@ const Services5Light = ({
           <div className="col-lg-12 text-center">
             <Link href="/contact">
               <a className="btn-curve btn-color wow fadeInUp" data-wow-delay=".5s">
-                <span>Get My Quote</span>
+                <span>Get Free Quote</span>
               </a>
             </Link>
           </div>

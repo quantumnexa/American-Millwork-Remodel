@@ -19,7 +19,7 @@ const Process = () => {
             </div>
           </div>
         </div>
-        <div className=" row">
+        <div className="row justify-content-center">
           <div
             className="col-lg-2-4 col-md-6 coulmn wow fadeInUp"
             data-wow-delay=".3s"

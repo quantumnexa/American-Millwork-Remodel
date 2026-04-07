@@ -90,7 +90,11 @@ const Services5 = () => {
           <div className="col-lg-8">
             <div className="row bord-box wow fadeInUp">
               {currentData.items.map((item, index) => (
-                <div className="col-lg-2-4 col-md-4 col-sm-6 item-bx" key={index}>
+                <div
+                  className="col-lg-3 col-md-4 col-sm-6 item-bx"
+                  style={{ flex: '0 0 25%', maxWidth: '25%' }}
+                  key={index}
+                >
                   <span className={`icon ${item.icon}`}></span>
                   <h6 className="mb-20">{item.title}</h6>
                 </div>
@@ -102,7 +106,7 @@ const Services5 = () => {
           <div className="col-lg-12 text-center">
             <Link href="/contact">
               <a className="btn-curve btn-color wow fadeInUp" data-wow-delay=".5s">
-                <span>Get My Quote</span>
+                <span>Get Free Quote</span>
               </a>
             </Link>
           </div>

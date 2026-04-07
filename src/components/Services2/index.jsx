@@ -99,7 +99,7 @@ const Services2 = () => {
             <div className="col-lg-12 text-center">
               <Link href="/work1">
                 <a className="btn-curve btn-color wow fadeInUp" data-wow-delay=".5s">
-                  <span>Get My Quote</span>
+                  <span>Get Free Quote</span>
                 </a>
               </Link>
             </div>

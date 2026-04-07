@@ -48,7 +48,7 @@ const Kitchen = () => {
         <NextProject
           title="START YOUR KITCHEN TRANSFORMATION"
           text="Ready to design your dream kitchen? Whether you need a custom cabinetry package or a complete remodel quote, send us your project details and our experts will guide you through the process."
-          btn1Text="Get My Quote"
+          btn1Text="Get Free Quote"
           btn2Text="Contact Our Designers"
         />
       </section>

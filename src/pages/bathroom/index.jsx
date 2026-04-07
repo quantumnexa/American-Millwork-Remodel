@@ -35,7 +35,7 @@ const Bathroom = () => {
         <BathroomNextProject
           title="START YOUR BATHROOM TRANSFORMATION"
           text="Ready to design your dream bathroom? From custom vanities to complete spa-like remodels, send us your project details and our experts will guide you through the process."
-          btn1Text="Get My Quote"
+          btn1Text="Get Free Quote"
           btn2Text="Contact Our Designers"
         />
       </section>

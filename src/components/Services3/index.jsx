@@ -32,9 +32,9 @@ const Services3 = ({ bigTitle, grid }) => {
           </div>
         )}
 
-        <div className="row">
+        <div className={`row ${services3Data.length === 2 ? "justify-content-center" : ""}`}>
           {services3Data.map((item, index) => (
-            <div className="col-lg-4" key={item.id}>
+            <div className={services3Data.length === 2 ? "col-lg-5 col-md-8" : "col-lg-3 col-md-6"} key={item.id}>
               <Link href={`/services${index+1}`}>
                 <a className="service-card-link" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
                   <div
@@ -46,7 +46,7 @@ const Services3 = ({ bigTitle, grid }) => {
                     <h6 className="mb-20">{item.title}</h6>
                     <p>{item.content}</p>
                     <span className={`more ${!grid ? "custom-font" : ""} mt-30`}>
-                      Read More
+                      Find out more
                     </span>
                   </div>
                 </a>

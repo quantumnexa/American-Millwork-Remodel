@@ -46,7 +46,7 @@ const Services3 = ({ bigTitle, grid }) => {
                     <h6 className="mb-20">{item.title}</h6>
                     <p>{item.content}</p>
                     <span className={`more ${!grid ? "custom-font" : ""} mt-30`}>
-                      Read More
+                      Find out more
                     </span>
                   </div>
                 </a>

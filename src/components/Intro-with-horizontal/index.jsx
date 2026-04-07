@@ -32,7 +32,7 @@ const IntroWithHorizontal = () => {
                   )}
                   <Link href="/about">
                     <a className="btn-curve btn-color mt-30" style={{ opacity: 1, transform: 'none' }}>
-                      <span>Read More</span>
+                      <span>Find out more</span>
                     </a>
                   </Link>
                 </div>

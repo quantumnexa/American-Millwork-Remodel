@@ -29,7 +29,7 @@ const Services1 = () => {
               <h6 className="mb-20">{item.title}</h6>
               <p>{item.content}</p>
               <Link href="/about">
-                <a className="more mt-30">Read More</a>
+                <a className="more mt-30">Find out more</a>
               </Link>
             </div>
           ))}

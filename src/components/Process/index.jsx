@@ -19,7 +19,7 @@ const Process = () => {
             </div>
           </div>
         </div>
-        <div className=" row">
+        <div className="row justify-content-center">
           <div
             className="col-lg-2-4 col-md-6 coulmn wow fadeInUp"
             data-wow-delay=".3s"
@@ -34,7 +34,7 @@ const Process = () => {
               </div>
               <div className="cont">
                 <h6 className="mb-10">STEP 1</h6>
-                <p>Send photos, measurements, plans, or a live video walkthrough.</p>
+                <p>Share a video or shop drawing of your project for a quick evaluation.</p>
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ const Process = () => {
               </div>
               <div className="cont">
                 <h6 className="mb-10">STEP 2</h6>
-                <p>Our team reviews the project and clarifies scope.</p>
+                <p>Our team measures, analyzes, and prepares a plan with a free quote.</p>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Process = () => {
               </div>
               <div className="cont">
                 <h6 className="mb-10">STEP 3</h6>
-                <p>We prepare a material quote and recommended options.</p>
+                <p>Get a transparent quote with options for ready-made, imported, or custom carpentry, including separate material and labor costs.</p>
               </div>
             </div>
           </div>
@@ -82,34 +82,17 @@ const Process = () => {
               <div style={{ overflow: 'hidden', borderRadius: '50%', width: '150px', height: '150px', margin: '0 auto 30px' }}>
                 <div
                   className="bg-img"
-                  style={{ backgroundImage: `url(/assets/img/new-images/process/4.png)`, width: '100%', height: '100%' }}
+                  style={{ backgroundImage: `url(/assets/img/new-images/process/5.png)`, width: '100%', height: '100%' }}
                 >
                 </div>
               </div>
               <div className="cont">
                 <h6 className="mb-10">STEP 4</h6>
-                <p>If needed, we help connect you with a local installer.</p>
+                <p>Sign your contract online, we handle everything, with financing options available.</p>
               </div>
             </div>
           </div>
-          <div
-            className="col-lg-2-4 col-md-6 wow fadeInUp"
-            data-wow-delay=".7s"
-          >
-            <div className="item">
-              <div style={{ overflow: 'hidden', borderRadius: '50%', width: '150px', height: '150px', margin: '0 auto 30px' }}>
-                <div
-                   className="bg-img"
-                   style={{ backgroundImage: `url(/assets/img/new-images/process/5.png)`, width: '100%', height: '100%' }}
-                 >
-                 </div>
-               </div>
-              <div className="cont">
-                <h6 className="mb-10">STEP 5</h6>
-                <p>You move forward with confidence.</p>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

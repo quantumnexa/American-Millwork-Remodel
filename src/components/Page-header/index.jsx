@@ -76,7 +76,7 @@ const PageHeader = ({ title, fullPath, image, text }) => {
               <div className="buttons-row valign justify-content-center" style={{ display: 'flex', gap: '30px', marginTop: '40px' }}>
                 <Link href="/work1">
                   <a className="btn-curve btn-color">
-                    <span>Get My Quote</span>
+                    <span>Get Free Quote</span>
                   </a>
                 </Link>
                 <Link href="/contact">

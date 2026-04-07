@@ -3,21 +3,15 @@
     "id": 1,
     "image": "/assets/img/01.jpg",
     "icon": "icon flaticon-home-1",
-    "title": "Commercial Millwork & Interiors",
-    "content": "Custom millwork, restaurant interiors, franchise finishes, retail displays, reception desks, feature walls, and finish carpentry for commercial spaces."
+    "title": "Custom Millwork & Stock Cabinets",
+    "content": "Our Houston-based millwork factory and stock cabinet warehouse provide fast, reliable solutions for both commercial and residential projects."
   },
   {
     "id": 2,
     "image": "/assets/img/02.jpg",
     "icon": "icon flaticon-living-room",
-    "title": "Residential Kitchen & Bathroom Remodeling",
-    "content": "Material quotes and finish coordination for kitchen remodels, bathroom upgrades, flooring, and interior finish improvements."
-  },
-  {
-    "id": 3,
-    "image": "/assets/img/03.jpg",
-    "icon": "icon flaticon-interior-design",
-    "title": "Shop Drawings & Project Planning",
-    "content": "Technical drawings and project coordination support for millwork production, layout planning, and installation preparation."
+    "title": "Kitchen & Bathroom Renovation and New Construction",
+    "content": "Material quotes and finish coordination for new construction, remodeling, and interior finishes, including kitchens and  bathrooms"
   }
+  
 ]

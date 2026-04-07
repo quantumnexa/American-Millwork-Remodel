@@ -13,9 +13,9 @@ const AboutUs2 = () => {
               className="exp-content nopat wow fadeInUp"
               data-wow-delay=".3s"
             >
-              <h6 className="sub-title main-color mb-10 ls10" style={{ color: '#B68C4A', letterSpacing: '4px', textTransform: 'uppercase', fontWeight: '500' }}>WHAT WE DO</h6>
+              <h6 className="sub-title main-color mb-10 ls10" style={{ color: '#B68C4A', letterSpacing: '4px', textTransform: 'uppercase', fontWeight: '500' }}> What we do </h6>
               <h2 className="mb-20 playfont">
-                One Platform For <span className="text-highlight">Millwork</span>, <span className="text-highlight">Remodeling</span> And <span className="text-highlight">Finishes</span>
+                One Platform For <span className="text-highlight">Custom Carpentry,</span> <span className="text-highlight">Millwork Assembly</span> And Kitchen & Bathroom <span className="text-highlight">Interior Finishes</span>
               </h2>
               <p>
                 A modern system for millwork, remodeling, and interior finishes. We combine commercial millwork expertise with residential material supply and remote project coordination to simplify the entire building and remodeling process.
@@ -27,7 +27,7 @@ const AboutUs2 = () => {
               </ul> */}
               {/* <Link href="/about">
                 <a className="btn-curve btn-color mt-30">
-                  <span>Read More</span>
+                  <span>Find out more</span>
                 </a>
               </Link> */}
             </div>

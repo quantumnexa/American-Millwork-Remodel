@@ -43,7 +43,7 @@ const Blogs1 = () => {
 
                   <Link href="/blog-details">
                     <a className="more">
-                      <span>Read More</span>
+                      <span>Find out more</span>
                     </a>
                   </Link>
                 </div>
