@@ -3,6 +3,7 @@ import appData from "../../data/app.json";
 
 const ContactWithMap = () => {
   const [mainService, setMainService] = React.useState("");
+  const [showUploads, setShowUploads] = React.useState(false);
   const residential = [
     "Kitchen Remodel",
     "Bathroom Remodel",
@@ -22,37 +23,25 @@ const ContactWithMap = () => {
   const [status, setStatus] = React.useState(null);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
-    const params = new URLSearchParams(typeof window !== "undefined" ? window.location.search : "");
-    const utm_source = params.get("utm_source") || null;
-    const custom = {
-      page: "contact",
-      utm_source,
-      message: formData.get("message"),
-      main_service: formData.get("main_service"),
-      sub_services: formData.getAll("sub_services[]").filter(Boolean),
-      zip: formData.get("zip"),
-      timing: formData.get("timing"),
-      budget: formData.get("budget"),
-      preferred_contact: formData.get("preferred_contact") || "Email",
-    };
-    formData.append("custom", JSON.stringify(custom));
-    formData.append("source", "website");
-    setStatus("pending");
+    setStatus({ type: "loading", message: "Submitting..." });
+
     try {
-      const res = await fetch("/api/leads", {
+      const formData = new FormData(e.target);
+      const response = await fetch("/api/leads", {
         method: "POST",
         body: formData,
       });
-      const data = await res.json();
-      if (data.ok) {
-        setStatus("success");
-        e.target.reset();
-      } else {
-        setStatus(data.error || "error");
+
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error?.error || "Submit failed");
       }
+
+      setStatus({ type: "success", message: "Your form has been submitted." });
+      e.target.reset();
+      setShowUploads(false); // optional if you want to reset upload section
     } catch (err) {
-      setStatus("error");
+      setStatus({ type: "error", message: err.message || "Submission failed." });
     }
   };
   return (
@@ -198,17 +187,30 @@ const ContactWithMap = () => {
               </div>
 
               <div className="form-group">
-                <div className="amr-group-title">Upload Images or Videos</div>
-                <input
-                  id="form_drawings"
-                  type="file"
-                  name="drawings"
-                  accept="image/*,video/*"
-                  multiple
-                  className="amr-input"
-                />
-                <p className="amr-form-sub">Upload photos or videos of your space to get a quick quote and estimate.</p>
+                <label className="amr-checkbox">
+                  <input
+                    type="checkbox"
+                    checked={showUploads}
+                    onChange={(e) => setShowUploads(e.target.checked)}
+                  />
+                  <span style={{color:'white'}}>Add photos or videos </span>
+                </label>
               </div>
+
+              {showUploads && (
+                <div className="form-group">
+                  <div className="amr-group-title">Upload photos or videos of your space to get a quick quote and estimate.</div>
+                  <input
+                    id="form_drawings"
+                    type="file"
+                    name="drawings"
+                    accept="image/*,video/*"
+                    multiple
+                    className="amr-input"
+                  />
+                  
+                </div>
+              )}
 
               <button type="submit" className="btn-curve btn-color" style={{ width: "100%" }} disabled={status === "pending"}>
                 <span>{status === "pending" ? "Submitting..." : "Send Message"}</span>
@@ -249,6 +251,20 @@ const ContactWithMap = () => {
       .amr-select:focus {
         outline: none;
         box-shadow: 0 0 0 2px rgba(182,140,74,0.35);
+      }
+      .amr-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #333;
+      }
+      .amr-checkbox input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        accent-color: #B68C4A;
       }
     `}</style>
     </>

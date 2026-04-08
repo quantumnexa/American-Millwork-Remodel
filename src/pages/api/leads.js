@@ -53,14 +53,14 @@ export default async function handler(req, res) {
       const supabase = createClient(supabaseUrl, supabaseKey);
 
       const uploadPromises = (Array.isArray(drawings) ? drawings : [drawings]).map(async (file) => {
-        const fileName = `${Date.now()}-${file.originalFilename}`;
+        const fileName = `drawings/${Date.now()}-${file.originalFilename}`;
         const { data, error } = await supabase.storage
-          .from("drawings")
+          .from("project-docs")
           .upload(fileName, file._writeStream || file.filepath, {
             contentType: file.mimetype,
           });
         if (error) throw error;
-        return supabase.storage.from("drawings").getPublicUrl(fileName).data.publicUrl;
+        return supabase.storage.from("project-docs").getPublicUrl(fileName).data.publicUrl;
       });
 
       try {
