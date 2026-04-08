@@ -52,12 +52,21 @@ const ContactWithMap = () => {
           <iframe title="Location map" src={appData.mapIframe} loading="lazy"></iframe>
         </div>
         <div className="col-lg-6 form">
-          <form id="contact-form" method="post" className="amr-form" onSubmit={handleSubmit}>
-            <div className="messages">
-              {status === "pending" && <p>Submitting...</p>}
-              {status === "success" && <p>Thank you! We have received your request.</p>}
-              {status && status !== "pending" && status !== "success" && <p>{status}</p>}
-            </div>
+          <form onSubmit={handleSubmit}>
+            {status && (
+              <div
+                style={{
+                  marginBottom: 16,
+                  padding: 12,
+                  borderRadius: 8,
+                  color: status.type === "success" ? "#155724" : "#721c24",
+                  background: status.type === "success" ? "#d4edda" : "#f8d7da",
+                  border: `1px solid ${status.type === "success" ? "#c3e6cb" : "#f5c6cb"}`,
+                }}
+              >
+                {status.message}
+              </div>
+            )}
 
             <div className="controls amr-contact-card wow fadeInUp" data-wow-delay=".2s">
               <div className="amr-form-header">
