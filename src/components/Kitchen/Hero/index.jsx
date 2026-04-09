@@ -23,7 +23,7 @@ const KitchenHero = () => {
           name,
           email,
           phone,
-          service_type: "Kitchen Remodeling",
+          service_type: "Interior Buildouts",
           source: "website",
           custom,
         }),
@@ -47,7 +47,7 @@ const KitchenHero = () => {
           <div className="media-wrapper slide-inner valign">
             <div className="bg-img" data-overlay-dark="5">
               <Image
-                src="/assets/img/hero/hero-kitchen.png"
+                src="/assets/img/hero/interior.png"
                 alt="Kitchen Hero"
                 layout="fill"
                 objectFit="cover"
@@ -64,14 +64,14 @@ const KitchenHero = () => {
                       <div className="hero-col">
                         <div className="custom-font">
                           <h5 className="thin custom-font text-highlight" style={{ color: "#B68C4A", letterSpacing: "4px", fontWeight: "500" }}>
-                            KITCHEN
+                            INTERIOR BUILDOUTS
                           </h5>
                           <h1 className="words chars splitting" style={{ fontSize: "55px", lineHeight: "1.1" }}>
-                            <Link href="#">Transform Your Kitchen Into a Modern Masterpiece</Link>
+                            <Link href="#">Transform Your Space with Expert Interior Buildouts</Link>
                           </h1>
                         </div>
                         <p className="mt-10">
-                          Expert kitchen remodeling services for both residential and commercial spaces — designed for style, efficiency, and long-lasting performance.
+                          From concept to completion, we design and build interiors that are functional, modern, and built to last—tailored to your business or home needs.
                         </p>
                       </div>
                       <div className="hero-form">
@@ -81,7 +81,7 @@ const KitchenHero = () => {
                             <input className="hf-input" name="name" type="text" placeholder="Name" required />
                             <input className="hf-input" name="phone" type="tel" placeholder="Phone" required />
                           </div>
-
+                          <input className="hf-input" name="email" type="email" placeholder="Email" required />
 
                           <textarea className="hf-textarea" name="message" rows="3" placeholder="Project Description" required />
                           <button className="btn-curve btn-color hf-btn" type="submit" disabled={status === "pending"}>

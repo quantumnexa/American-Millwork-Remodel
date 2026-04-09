@@ -81,6 +81,7 @@ const BathroomHero = () => {
                             <input className="hf-input" name="name" type="text" placeholder="Name" required />
                             <input className="hf-input" name="phone" type="tel" placeholder="Phone" required />
                           </div>
+                          <input className="hf-input" name="email" type="email" placeholder="Email" required />
                           
                          
                           <textarea className="hf-textarea" name="message" rows="3" placeholder="Project Description" required />

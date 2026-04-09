@@ -64,13 +64,13 @@ const KitchenVideoReels = () => {
           <div className="col-lg-4">
             <div className="section-head mb-0">
               <h6 className="sub-title main-color mb-10 ls10" style={{ color: "#B68C4A", letterSpacing: "4px", textTransform: "uppercase", fontWeight: 500, fontFamily: "'Poppins', sans-serif" }}>
-                Experience Our Work
+                EXPERIENCE OUR WORK
               </h6>
               <h2 className="mb-20 playfont" style={{ fontSize: "45px", fontWeight: "600", color: "#111", lineHeight: "1.2" }}>
-                Where Kitchen Design <br/> Meets Expert Millwork
+                Where Vision Becomes Reality
               </h2>
               <p className="text-gray mb-40">
-                Take a closer look at our recent kitchen transformations. From custom cabinetry to modern islands, see how we bring high-quality craftsmanship to every home.
+                See how we turn empty or outdated spaces into fully functional, visually impressive interiors. Every detail is planned and executed to create spaces that work as good as they look.
               </p>
               <div className="reels-nav-custom d-flex align-items-center" style={{ gap: '30px', marginTop: '40px' }}>
                 <div className="swiper-button-prev-custom">

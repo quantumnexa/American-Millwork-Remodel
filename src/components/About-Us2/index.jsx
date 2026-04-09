@@ -44,7 +44,7 @@ const AboutUs2 = () => {
                   ></div>
                 </div>
                 <div className="col-md-8 wow fadeInUp" data-wow-delay=".3s">
-                  <div className="img mb-20 wow imago" style={{ position: 'relative', width: '100%', height: '300px' }}>
+                  <div className="img mb-20 wow imago" style={{ position: 'relative', width: '100%', maxWidth: '400px', height: '300px' }}>
                     <Image 
                       src={aboutUs2Data.image1} 
                       alt="about" 
@@ -56,7 +56,7 @@ const AboutUs2 = () => {
                   </div>
                 </div>
                 <div className="col-md-7 wow fadeInUp" data-wow-delay=".3s">
-                  <div className="img wow imago" style={{ position: 'relative', width: '100%', height: '300px' }}>
+                  <div className="img wow imago" style={{ position: 'relative', width: '100%', maxWidth: '400px', height: '300px' }}>
                     <Image 
                       src={aboutUs2Data.image2} 
                       alt="about" 

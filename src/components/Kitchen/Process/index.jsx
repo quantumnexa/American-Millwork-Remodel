@@ -14,7 +14,7 @@ const Process = () => {
                 HOW WE DO IT
               </h6>
               <h4 className="playfont wow flipInX" data-wow-delay=".5s">
-                How Our Kitchen Remodeling Process Works
+                Simple, Efficient, Done Right
               </h4>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Process = () => {
               </div>
               <div className="cont">
                 <h6 className="mb-10">STEP 1</h6>
-                <p>Submit your kitchen measurements and photos online.</p>
+                <p>Share your vision and space requirements</p>
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ const Process = () => {
               </div>
               <div className="cont">
                 <h6 className="mb-10">STEP 2</h6>
-                <p>Our designers review your space and project goals.</p>
+                <p>Plan layout, design, and materials</p>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Process = () => {
               </div>
               <div className="cont">
                 <h6 className="mb-10">STEP 3</h6>
-                <p>We provide a custom cabinetry and material quote.</p>
+                <p>Receive a detailed, transparent quote</p>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@ const Process = () => {
               </div>
               <div className="cont">
                 <h6 className="mb-10">STEP 4</h6>
-                <p>We coordinate material delivery and local installation.</p>
+                <p>We build, manage, and execute the project</p>
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@ const Process = () => {
                </div>
               <div className="cont">
                 <h6 className="mb-10">STEP 5</h6>
-                <p>You move forward with confidence.</p>
+                <p>Final walkthrough and project handover</p>
               </div>
             </div>
           </div>

@@ -13,13 +13,27 @@ const AboutUs2 = () => {
               className="exp-content nopat wow fadeInUp"
               data-wow-delay=".3s"
             >
-              <h6 className="sub-title main-color mb-10 ls10" style={{ color: '#B68C4A' }}>ABOUT US</h6>
+              <h6 className="sub-title main-color mb-10 ls10" style={{ color: '#B68C4A' }}>SMART BUILDOUT SOLUTIONS</h6>
               <h2 className="mb-20 playfont">
-                Premium <span className="text-highlight">Kitchen Remodeling</span> and <span className="text-highlight">Custom Cabinetry</span>
+                Built Around Your Space &amp; <span className="text-highlight">Goals</span>
               </h2>
               <p>
-                We specialize in complete kitchen transformations, combining high-end material supply with expert project coordination. Whether you are looking for modern minimalist designs or traditional luxury finishes, our system simplifies the remodeling process from initial measurements to final installation.
+                Whether you&apos;re launching a new location or upgrading an existing space, we deliver interior buildouts that align with your vision, workflow, and brand identity.
               </p>
+              <div className="solutions-list mt-40">
+                <div className="solution-item mb-20">
+                  <h5 className="fw-600">Commercial Buildouts:</h5>
+                  <p>Offices, retail stores, and hospitality spaces designed for efficiency, customer experience, and long-term durability.</p>
+                </div>
+                <div className="solution-item mb-20">
+                  <h5 className="fw-600">Residential Interior Upgrades:</h5>
+                  <p>Modern interiors tailored for comfort, functionality, and style—perfect for remodels and renovations.</p>
+                </div>
+                <div className="solution-item mb-20">
+                  <h5 className="fw-600">Custom Design & Layouts:</h5>
+                  <p>Optimized floor plans and finishes that maximize space, improve flow, and elevate the overall look.</p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-lg-6">

@@ -14,10 +14,10 @@ const KitchenBrands = () => {
           <div className="row justify-content-center">
             <div className="col-lg-8 col-md-10">
               <h6 className="sub-title main-color mb-10 ls10" style={{ color: "#B68C4A", letterSpacing: "4px", textTransform: "uppercase", fontWeight: 500, paddingLeft: 0 }}>
-                Our Partners
+                Trusted by Businesses & Property Owners
               </h6>
               <h2 className="mb-20 playfont">Brands We Have Worked With</h2>
-              <p>Trusted manufacturers and suppliers we collaborate with to deliver quality kitchens and interior finishes.</p>
+              <p>We partner with contractors, designers, and property owners to deliver high-quality interior buildouts that meet real-world demands—on time and on budget.</p>
             </div>
           </div>
         </div>
